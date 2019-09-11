@@ -1,0 +1,27 @@
+{
+  "name": "nectardao",
+  "version": "1.0.0",
+  "description": "nectar dao deployment repo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daostack/nectardao.git"
+  },
+  "keywords": [
+    "nectar",
+    "dao",
+    "daostack"
+  ],
+  "author": "daostack.io",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/daostack/nectardao/issues"
+  },
+  "homepage": "https://github.com/daostack/nectardao#readme",
+  "dependencies": {
+  "@daostack/migration": "0.0.1-rc.24-v1"
+  }
+}
