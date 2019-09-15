@@ -4,7 +4,8 @@
   "description": "nectar dao deployment repo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate_production": "daostack-migrate dao --params ./parameters/production.json"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,6 @@
   },
   "homepage": "https://github.com/daostack/nectardao#readme",
   "dependencies": {
-  "@daostack/migration": "0.0.1-rc.24-v1"
+    "@daostack/migration": "0.0.1-rc.24-v2"
   }
 }

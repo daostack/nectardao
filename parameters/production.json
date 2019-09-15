@@ -1,91 +1,186 @@
 {
-  "ContributionReward": [{}],
-  "UGenericScheme": [{
-    "targetContract": "0x0000000000000000000000000000000000000000"
-  }],
-  "SchemeRegistrar": [{}],
-  "GlobalConstraintRegistrar": [{}],
-  "UpgradeScheme": [{}],
-  "VotingMachinesParams": [
-    {
-      "boostedVotePeriodLimit": 600,
-      "daoBountyConst": 10,
-      "minimumDaoBounty": 100,
-      "queuedVotePeriodLimit": 1800,
-      "queuedVoteRequiredPercentage": 50,
-      "preBoostedVotePeriodLimit": 600,
-      "proposingRepReward": 5,
-      "quietEndingPeriod": 300,
-      "thresholdConst": 2000,
-      "voteOnBehalf": "0x0000000000000000000000000000000000000000",
-      "votersReputationLossRatio": 1,
-      "activationTime": 0
-    }
-  ],
-  "schemes": {
-    "ContributionReward": true,
-    "UGenericScheme": true,
-    "SchemeRegistrar": true,
-    "GlobalConstraintRegistrar": true,
-    "UpgradeScheme": true
-  },
-  "CustomSchemes": [
+   "orgName":"Nectar DAO",
+   "tokenName":"Nectar DAO Token",
+   "tokenSymbol":"NDT",
+   "ContributionReward":[
+      {
+         "voteParams":0
+      }
+   ],
+   "SchemeRegistrar":[
+      {
+         "voteRegisterParams":1,
+         "voteRemoveParams":1
+      }
+   ],
+   "StandAloneContracts":[
      {
-      "name": "GenericScheme",
-      "params": [
-        "GenesisProtocolAddress",
-        {"voteParams": 0},
-        "0x0000000000000000000000000000000000000000"
-      ],
-      "permissions": "0x00000010",
-      "alias" : "GenericSchemeAlias",
+      "name": "Reputation",
       "fromArc": true
-    },
-    {
-      "name": "GenericScheme",
-      "isUniversal": false,
-      "params": [
-        "GenesisProtocolAddress",
-        {"voteParams": 0},
-        "0x0000000000000000000000000000000000000001"
-      ],
-      "permissions": "0x00000010",
-      "alias" : "GenericSchemeAlias2",
-      "fromArc": true
-    }],
-  "unregisterOwner": true,
-  "useUController": false,
-  "useDaoCreator": false,
-  "founders": [
-    {
-      "address": "0x90f8bf6a479f320ead074411a4b0e7944ea8c9c1",
-      "tokens": 1000,
-      "reputation": 1000
-    },
-    {
-      "address": "0xffcf8fdee72ac11b5c542428b35eef5769c409f0",
-      "tokens": 1000,
-      "reputation": 1000
-    },
-    {
-      "address": "0x22d491bde2303f2f43325b2108d26f1eaba1e32b",
-      "tokens": 1000,
-      "reputation": 1000
-    },
-    {
-      "address": "0xe11ba2b4d45eaed5996cd0823791e0c93114882d",
-      "tokens": 1000,
-      "reputation": 1000
-    },
-    {
-      "address": "0xd03ea8624c8c5987235048901fb614fdca89b117",
-      "tokens": 1000,
-      "reputation": 1000
-    },
-    {
-      "address": "0x95ced938f7991cd0dfcb48f0a06a40fa1af46ebc",
-      "tokens": 1000,
-      "reputation": 1000
+     },
+     {
+     "name": "NectarRepAllocation",
+     "params": [
+       100000,
+       1573128000,
+       1573236000,
+       8549305,
+       {"StandAloneContract": 0}
+     ],
+     "fromArc": true
+   }
+   ],
+   "CustomSchemes":[
+      {
+         "name":"GenericScheme",
+         "schemeName":"GenericScheme",
+         "params":[
+            "GenesisProtocolAddress",
+            {
+               "voteParams":1
+            },
+            "0x0000000000000000000000000000000000000000"
+         ],
+         "permissions":"0x00000010",
+         "alias":"GenericSchemeENS",
+         "fromArc":true
+      },
+      {
+         "name":"GenericScheme",
+         "schemeName":"GenericScheme",
+         "isUniversal":false,
+         "params":[
+            "GenesisProtocolAddress",
+            {
+               "voteParams":0
+            },
+            "0x0000000000000000000000000000000000000000"
+         ],
+         "permissions":"0x00000010",
+         "alias":"GenericSchemeTrading",
+         "fromArc":true
+      },
+      {
+         "name":"GenericScheme",
+         "schemeName":"GenericScheme",
+         "isUniversal":false,
+         "params":[
+            "GenesisProtocolAddress",
+            {
+               "voteParams":2
+            },
+            "0x0000000000000000000000000000000000000000"
+         ],
+         "permissions":"0x00000010",
+         "alias":"GenericSchemeWhitelist",
+         "fromArc":true
+      },
+      {
+       "name":"ContinuousLocking4Reputation",
+       "schemeName":"ContinuousLocking4Reputation",
+       "isUniversal":false,
+       "params":[
+         850000,
+         1573128000,
+         108000,
+         1573236000,
+         12,
+         85000,
+         900,
+         100,
+         "0xCc80C051057B774cD75067Dc48f8987C4Eb97A5e",
+         "0x0000000000000000000000000000000000000000"
+       ],
+       "permissions":"0x00000010",
+       "alias":"InfiniteReputation4Token",
+       "fromArc":true
+     },
+     {
+       "name":"Auction4Reputation",
+       "schemeName":"Auction4Reputation",
+       "isUniversal":false,
+       "params":[
+         50000,
+         1573128000,
+         259200,
+         10,
+         1575720000,
+         "0x543Ff227F64Aa17eA132Bf9886cAb5DB55DCAddf",
+         "AvatarAddress",
+         "0x0000000000000000000000000000000000000000"
+       ],
+       "permissions":"0x00000010",
+       "alias":"GENAuction",
+       "fromArc":true
+     },
+     {
+       "name": "ReputationFromToken",
+       "isUniversal": false,
+       "params": [
+         {"StandAloneContract":1},
+         "0x0000000000000000000000000000000000000001"
+       ],
+       "alias" : "ReputationFromToken",
+       "fromArc": true,
+       "permissions": "0x00000000"
+     }
+   ],
+   "VotingMachinesParams":[
+      {
+         "boostedVotePeriodLimit":259200,
+         "daoBountyConst":10,
+         "minimumDaoBounty":150,
+         "queuedVotePeriodLimit":3888000,
+         "queuedVoteRequiredPercentage":50,
+         "preBoostedVotePeriodLimit":86400,
+         "proposingRepReward":5000,
+         "quietEndingPeriod":86400,
+         "thresholdConst":1200,
+         "voteOnBehalf":"0x0000000000000000000000000000000000000000",
+         "votersReputationLossRatio":4,
+         "activationTime":1576324800
+      },
+      {
+         "boostedVotePeriodLimit":1209600,
+         "daoBountyConst":10,
+         "minimumDaoBounty":500,
+         "queuedVotePeriodLimit":7776000,
+         "queuedVoteRequiredPercentage":50,
+         "preBoostedVotePeriodLimit":172800,
+         "proposingRepReward":10000,
+         "quietEndingPeriod":345600,
+         "thresholdConst":1300,
+         "voteOnBehalf":"0x0000000000000000000000000000000000000000",
+         "votersReputationLossRatio":4,
+         "activationTime":1576324800
+      },
+      {
+       "boostedVotePeriodLimit":172800,
+       "daoBountyConst":10,
+       "minimumDaoBounty":50,
+       "queuedVotePeriodLimit":1209600,
+       "queuedVoteRequiredPercentage":50,
+       "preBoostedVotePeriodLimit":14400,
+       "proposingRepReward":100,
+       "quietEndingPeriod":28800,
+       "thresholdConst":1200,
+       "voteOnBehalf":"0x0000000000000000000000000000000000000000",
+       "votersReputationLossRatio":4,
+       "activationTime":1576324800
     }
-  ]
-}
+   ],
+   "schemes":{
+      "ContributionReward":true,
+      "SchemeRegistrar":true
+   },
+   "unregisterOwner":true,
+   "useUController":false,
+   "useDaoCreator":true,
+   "founders":[
+      {
+         "address":"0x000000000000000000000000000000000000dead",
+         "tokens":0,
+         "reputation":0
+      }
+   ]
+ }
