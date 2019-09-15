@@ -19,6 +19,7 @@
    "CustomSchemes":[
       {
          "name":"GenericScheme",
+         "schemeName":"GenericScheme",
          "params":[
             "GenesisProtocolAddress",
             {
@@ -32,6 +33,7 @@
       },
       {
          "name":"GenericScheme",
+         "schemeName":"GenericScheme",
          "isUniversal":false,
          "params":[
             "GenesisProtocolAddress",
@@ -46,6 +48,7 @@
       },
       {
          "name":"GenericScheme",
+         "schemeName":"GenericScheme",
          "isUniversal":false,
          "params":[
             "GenesisProtocolAddress",
@@ -60,6 +63,7 @@
       },
       {
        "name":"ContinuousLocking4Reputation",
+       "schemeName":"ContinuousLocking4Reputation",
        "isUniversal":false,
        "params":[
          850000,
@@ -79,13 +83,14 @@
      },
      {
        "name":"Auction4Reputation",
+       "schemeName":"Auction4Reputation",
        "isUniversal":false,
        "params":[
          50000,
          1573128000,
          259200,
          10,
-         1573236000,
+         1575720000,
          "0x543Ff227F64Aa17eA132Bf9886cAb5DB55DCAddf",
          "AvatarAddress",
          "0x0000000000000000000000000000000000000000"
@@ -155,3 +160,4 @@
       }
    ]
  }
+ 
