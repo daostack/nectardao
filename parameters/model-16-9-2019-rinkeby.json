@@ -13,9 +13,27 @@
          "voteRemoveParams":1
       }
    ],
-   "ReputationFromToken": {
-     "curve":"0x0000000000000000000000000000000000000000"
+   "StandAloneContracts":[
+     {
+      "name": "Reputation",
+      "fromArc": true
+     },
+     {
+     "name": "NectarRepAllocation",
+     "params": [
+       100000,
+       1568635200,
+       1568638800,
+       8549305,
+       {"StandAloneContract": 0}
+     ],
+     "fromArc": true
    },
+   {
+    "name": "Wallet",
+    "fromArc": true
+   }
+   ],
    "CustomSchemes":[
       {
          "name":"GenericScheme",
@@ -25,7 +43,7 @@
             {
                "voteParams":1
             },
-            "0x0000000000000000000000000000000000000000"
+            {"StandAloneContract":2}
          ],
          "permissions":"0x00000010",
          "alias":"GenericSchemeENS",
@@ -40,7 +58,7 @@
             {
                "voteParams":0
             },
-            "0x0000000000000000000000000000000000000000"
+            {"StandAloneContract":2}
          ],
          "permissions":"0x00000010",
          "alias":"GenericSchemeTrading",
@@ -55,7 +73,7 @@
             {
                "voteParams":2
             },
-            "0x0000000000000000000000000000000000000000"
+            {"StandAloneContract":2}
          ],
          "permissions":"0x00000010",
          "alias":"GenericSchemeWhitelist",
@@ -67,14 +85,14 @@
        "isUniversal":false,
        "params":[
          850000,
-         1573128000,
-         108000,
-         1573236000,
+         1568635200,
+         3600,
+         1568638800,
          12,
          85000,
          900,
          100,
-         "0xCc80C051057B774cD75067Dc48f8987C4Eb97A5e",
+         "0x543Ff227F64Aa17eA132Bf9886cAb5DB55DCAddf",
          "0x0000000000000000000000000000000000000000"
        ],
        "permissions":"0x00000010",
@@ -87,10 +105,10 @@
        "isUniversal":false,
        "params":[
          50000,
-         1573128000,
-         259200,
+         1568635200,
+         360,
          10,
-         1575720000,
+         1568638800,
          "0x543Ff227F64Aa17eA132Bf9886cAb5DB55DCAddf",
          "AvatarAddress",
          "0x0000000000000000000000000000000000000000"
@@ -98,56 +116,66 @@
        "permissions":"0x00000010",
        "alias":"GENAuction",
        "fromArc":true
+     },
+     {
+       "name": "ReputationFromToken",
+       "isUniversal": false,
+       "params": [
+         {"StandAloneContract":1},
+         "0x0000000000000000000000000000000000000001"
+       ],
+       "alias" : "ReputationFromToken",
+       "fromArc": true,
+       "permissions": "0x00000000"
      }
    ],
    "VotingMachinesParams":[
       {
-         "boostedVotePeriodLimit":259200,
+         "boostedVotePeriodLimit":1800,
          "daoBountyConst":10,
          "minimumDaoBounty":150,
-         "queuedVotePeriodLimit":3888000,
+         "queuedVotePeriodLimit":3600,
          "queuedVoteRequiredPercentage":50,
-         "preBoostedVotePeriodLimit":86400,
+         "preBoostedVotePeriodLimit":600,
          "proposingRepReward":5000,
          "quietEndingPeriod":86400,
          "thresholdConst":1200,
          "voteOnBehalf":"0x0000000000000000000000000000000000000000",
          "votersReputationLossRatio":4,
-         "activationTime":1576324800
+         "activationTime":1568642400
       },
       {
-         "boostedVotePeriodLimit":1209600,
+         "boostedVotePeriodLimit":1800,
          "daoBountyConst":10,
          "minimumDaoBounty":500,
-         "queuedVotePeriodLimit":7776000,
+         "queuedVotePeriodLimit":3600,
          "queuedVoteRequiredPercentage":50,
-         "preBoostedVotePeriodLimit":172800,
+         "preBoostedVotePeriodLimit":600,
          "proposingRepReward":10000,
          "quietEndingPeriod":345600,
          "thresholdConst":1300,
          "voteOnBehalf":"0x0000000000000000000000000000000000000000",
          "votersReputationLossRatio":4,
-         "activationTime":1576324800
+         "activationTime":1568642400
       },
       {
-       "boostedVotePeriodLimit":172800,
+       "boostedVotePeriodLimit":1800,
        "daoBountyConst":10,
        "minimumDaoBounty":50,
-       "queuedVotePeriodLimit":1209600,
+       "queuedVotePeriodLimit":3600,
        "queuedVoteRequiredPercentage":50,
-       "preBoostedVotePeriodLimit":14400,
+       "preBoostedVotePeriodLimit":600,
        "proposingRepReward":100,
        "quietEndingPeriod":28800,
        "thresholdConst":1200,
        "voteOnBehalf":"0x0000000000000000000000000000000000000000",
        "votersReputationLossRatio":4,
-       "activationTime":1576324800
+       "activationTime":1568642400
     }
    ],
    "schemes":{
       "ContributionReward":true,
-      "SchemeRegistrar":true,
-      "ReputationFromToken": true
+      "SchemeRegistrar":true
    },
    "unregisterOwner":true,
    "useUController":false,
@@ -160,4 +188,3 @@
       }
    ]
  }
- 
