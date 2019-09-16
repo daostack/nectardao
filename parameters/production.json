@@ -21,7 +21,7 @@
      {
      "name": "NectarRepAllocation",
      "params": [
-       100000,
+       "100000000000000000000000",
        1573128000,
        1573236000,
        8549305,
@@ -80,12 +80,12 @@
        "schemeName":"ContinuousLocking4Reputation",
        "isUniversal":false,
        "params":[
-         850000,
+         "850000000000000000000000",
          1573128000,
          108000,
          1573236000,
          12,
-         85000,
+         "85000000000000000000000",
          900,
          100,
          "0xCc80C051057B774cD75067Dc48f8987C4Eb97A5e",
@@ -100,7 +100,7 @@
        "schemeName":"Auction4Reputation",
        "isUniversal":false,
        "params":[
-         50000,
+         "50000000000000000000000",
          1573128000,
          259200,
          10,
