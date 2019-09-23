@@ -127,7 +127,7 @@
    ],
    "VotingMachinesParams":[
       {
-         "boostedVotePeriodLimit":259200,
+         "boostedVotePeriodLimit":604800,
          "daoBountyConst":10,
          "minimumDaoBounty":150,
          "queuedVotePeriodLimit":3888000,
