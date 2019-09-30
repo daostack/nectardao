@@ -1,0 +1,51 @@
+ℹ Found an existing previous migration file (/Users/thomas/Code/client/EthFinex/nectardao/node_modules/@daostack/migration/migration.json)
+? About to migrate new DAO. Continue? Yes
+ℹ 0xf0d0fbc440a3dfe50aabc5ae69661a81ccd37476e28ad227a9cecfc2ae58eb85 | 0.16937 ETH | Created new organization.
+ℹ 0xc5f43d018271b72ba82472d3acc96a4cb612311e1ad3f6a504768d6efad67a1f | 0.00280 ETH | GenesisProtocol parameters set.
+ℹ 0x5693b2c92393cf28ac02e74e6b1787e9e78fcbfaafbadfef76227021cafc2e3c | 0.00280 ETH | GenesisProtocol parameters set.
+ℹ 0xeab9dd0b1d9abc4d5beff89a6563e0a78e5654cff8f4c02c59ee5581bb55f9e2 | 0.00279 ETH | GenesisProtocol parameters set.
+ℹ 0x546ac1fe71d72d9cae1e10ae7eb23c75c831ab218fd37eba8f28c4d286a1ac1b | 0.00128 ETH | Scheme Registrar parameters set.
+ℹ 0x32a19d9115773ed7568b7b09e4211a993faa6fc73ae07517adcb2da0d4c71e53 | 0.00107 ETH | Contribution Reward parameters set.
+ℹ 0x712451c856e863d3622e5fb1e1153ce363d425d21a72d6115a61f6cfc202fd26 | 0.02231 ETH | 0x714040f1e86f3aeC3DB059257081c5763427DD57 => Reputation
+ℹ 0x315e93f53d35b313872308d614d3404e67684df78b317a4af52f772ee5651439 | 0.01268 ETH | 0x3Ca23Cc7C623b93D859ede957432761F8e055BC1 => NectarRepAllocation
+ℹ 0x338d1cdc60040512e170a90b8414f2eaf667b2965e82448af594f28dc5fec6d2 | 0.00398 ETH | NectarRepAllocation initialized.
+ℹ 0x4bff7cd58b793fab85cb8bdcbb9e641f9ae07b4dd5b2314a4e2adcc1049e96eb | 0.01125 ETH | 0xd17E958f92080E740aA84c45a30F1C469f24B865 => Wallet
+ℹ 0x3bc9be3d4df95156e6d0ddf6acd47c263b24b6f85d23093d09a1944d7f570878 | 0.05295 ETH | 0x6133BD9b18B6d451600519dB3b9d13e671b3273C => GenericScheme
+ℹ 0xbbc13718a0bcfe2e4c95224810b57cbb993540dbf8340e0f85f7d7e0276db49e | 0.00327 ETH | GenericScheme initialized.
+ℹ 0xb054bb9ec619ad416643e6a439ec10527b042eef8c912e76529c5397cfce3f3d | 0.05295 ETH | 0x9f51489883EFcbd14f2c91af82Fe393973336bc4 => GenericScheme
+ℹ 0x56bc4e46d62c91ca0f4d50563ae6395c33cfe9a4883953352641bfca9e2361b6 | 0.00327 ETH | GenericScheme initialized.
+ℹ 0x875152ee68ebbb8ead8ff3e24514d9edfb91f3b3f8b35392e595291b4060f7fd | 0.05295 ETH | 0x32bbe993a939cddbBEC9C3079118050d83a99F1a => GenericScheme
+ℹ 0x74e00c85d99351bb0ff2a3c5b3f7940c53638b298e7cb486cc579531aca36d19 | 0.00327 ETH | GenericScheme initialized.
+ℹ 0xce9d41db46307df9b57f252c687dff8b2a6f3606af8b2d1476ca966cb3e9abac | 0.05398 ETH | 0xD023231B1418e94c1aeaB67e383c366893Cf52A0 => ContinuousLocking4Reputation
+ℹ 0xeed532bb6da27b45003af6fbfad004059fccec7faee9c86b16072c86e0136f13 | 0.00701 ETH | ContinuousLocking4Reputation initialized.
+ℹ 0xcd561511815282485a8902d856fc521c2b9256afb08e40eb6cac9ec7e559e2f7 | 0.03720 ETH | 0xA4fFf4F1C6B567bD21f40DA3bae9632Cc92B796C => Auction4Reputation
+ℹ 0x627fc29616c08cc7ee4ebb37baac0ef6e24c23e445b29d7e2aea0a80ca66c624 | 0.00702 ETH | Auction4Reputation initialized.
+ℹ 0x618fe09b1cd59f5b8e81b489b49e6a1e11bee495b3a8d8e63906a0588e4698fb | 0.01464 ETH | 0xa7b357EAD597D543Cbc169329A812a4Fca6816eE => ReputationFromToken
+ℹ 0x14d811d95194509987d35869e41e08ccb0c53dd2b97b0178fb1da696cc982f21 | 0.00257 ETH | ReputationFromToken initialized.
+ℹ 0x75453f610b3301ce9bc5ce550c8cdfce82dc0c164ca0ce1161fac991bca23047 | 0.00990 ETH | DAO schemes set.
+{ name: 'Nectar DAO',
+  Avatar: '0x5cf5cC1C6D92d8cA8fF8335C6C3730B7ee960fA9',
+  DAOToken: '0x2f3479b9A26C968aDf0f08BD4Be5c23965a911e7',
+  Reputation: '0xBd1a9f78352AA1B11D19E8759dC99FC5FDeEbED8',
+  Controller: '0x2Da8e4abAB198897E8F8F07Ed9a04d5a2f8481a9',
+  Schemes:
+   [ { name: 'GenericScheme',
+       alias: 'GenericSchemeENS',
+       address: '0x6133BD9b18B6d451600519dB3b9d13e671b3273C' },
+     { name: 'GenericScheme',
+       alias: 'GenericSchemeTrading',
+       address: '0x9f51489883EFcbd14f2c91af82Fe393973336bc4' },
+     { name: 'GenericScheme',
+       alias: 'GenericSchemeWhitelist',
+       address: '0x32bbe993a939cddbBEC9C3079118050d83a99F1a' },
+     { name: 'ContinuousLocking4Reputation',
+       alias: 'InfiniteReputation4Token',
+       address: '0xD023231B1418e94c1aeaB67e383c366893Cf52A0' },
+     { name: 'Auction4Reputation',
+       alias: 'GENAuction',
+       address: '0xA4fFf4F1C6B567bD21f40DA3bae9632Cc92B796C' },
+     { name: 'ReputationFromToken',
+       alias: 'ReputationFromToken',
+       address: '0xa7b357EAD597D543Cbc169329A812a4Fca6816eE' } ] }
+ℹ Finished in 6 minutes and costed 0.03129664ETH
+✔ Wrote results to /Users/thomas/Code/client/EthFinex/nectardao/node_modules/@daostack/migration/migration.json
