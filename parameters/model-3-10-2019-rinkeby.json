@@ -22,8 +22,8 @@
      "name": "NectarRepAllocation",
      "params": [
        100000,
-       1569963600,
-       1570014000,
+       1570093200,
+       1570100400,
        5191003,
        "0x05A047C9bD8F36B0D9F8AD146176EbA821B3a3AE"
      ],
@@ -85,9 +85,9 @@
        "isUniversal":false,
        "params":[
          850000,
-         1569963600,
+         1570093200,
          7200,
-         1570014000,
+         1570100400,
          12,
          85000,
          900,
@@ -105,10 +105,10 @@
        "isUniversal":false,
        "params":[
          50000,
-         1569963600,
+         1570093200,
          720,
          10,
-         1570014000,
+         1570100400,
          "0x543Ff227F64Aa17eA132Bf9886cAb5DB55DCAddf",
          "AvatarAddress",
          "0x0000000000000000000000000000000000000000"
@@ -142,7 +142,7 @@
          "thresholdConst":1200,
          "voteOnBehalf":"0x0000000000000000000000000000000000000000",
          "votersReputationLossRatio":4,
-         "activationTime":1570021200
+         "activationTime":1570107600
       },
       {
          "boostedVotePeriodLimit":1800,
@@ -156,7 +156,7 @@
          "thresholdConst":1300,
          "voteOnBehalf":"0x0000000000000000000000000000000000000000",
          "votersReputationLossRatio":4,
-         "activationTime":1570021200
+         "activationTime":1570107600
       },
       {
        "boostedVotePeriodLimit":1800,
@@ -170,7 +170,7 @@
        "thresholdConst":1200,
        "voteOnBehalf":"0x0000000000000000000000000000000000000000",
        "votersReputationLossRatio":4,
-       "activationTime":1570021200
+       "activationTime":1570107600
     }
    ],
    "schemes":{
