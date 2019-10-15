@@ -18,10 +18,10 @@
      "name": "NectarRepAllocation",
      "params": [
        "100000000000000000000000",
-       1573128000,
-       1573236000,
-       8549305,
-       "0xCc80C051057B774cD75067Dc48f8987C4Eb97A5e"
+       1571130000,
+       1571137200,
+       5236554,
+       "0x05A047C9bD8F36B0D9F8AD146176EbA821B3a3AE"
      ],
      "fromArc": true
    }
@@ -35,7 +35,7 @@
             {
                "voteParams":1
             },
-            "0x0000000000000000000000000000000000000000"
+            "0x2396A687f75f1a13e3927F1841B291350b0ED977"
          ],
          "permissions":"0x00000010",
          "alias":"GenericSchemeENS",
@@ -48,27 +48,12 @@
          "params":[
             "GenesisProtocolAddress",
             {
-               "voteParams":0
-            },
-            "0x0000000000000000000000000000000000000000"
-         ],
-         "permissions":"0x00000010",
-         "alias":"GenericSchemeTrading",
-         "fromArc":true
-      },
-      {
-         "name":"GenericScheme",
-         "schemeName":"GenericScheme",
-         "isUniversal":false,
-         "params":[
-            "GenesisProtocolAddress",
-            {
                "voteParams":2
             },
-            "0x0000000000000000000000000000000000000000"
+            "0xb5F95A7118C7B778746Ae35AdBB16Fc95f021ae9"
          ],
          "permissions":"0x00000010",
-         "alias":"GenericSchemeWhitelist",
+         "alias":"GenericSchemeRegistryLookup",
          "fromArc":true
       },
       {
@@ -77,14 +62,14 @@
        "isUniversal":false,
        "params":[
          "850000000000000000000000",
-         1573128000,
-         108000,
-         1573236000,
+         1571130000,
+         3600,
+         1571137200,
          12,
          "85000000000000000000000",
          900,
          100,
-         "0xCc80C051057B774cD75067Dc48f8987C4Eb97A5e",
+         "0x05A047C9bD8F36B0D9F8AD146176EbA821B3a3AE",
          "0x0000000000000000000000000000000000000000"
        ],
        "permissions":"0x00000010",
@@ -97,10 +82,10 @@
        "isUniversal":false,
        "params":[
          "50000000000000000000000",
-         1573128000,
-         259200,
+         1571130000,
+         360,
          10,
-         1575720000,
+         1571137200,
          "0x543Ff227F64Aa17eA132Bf9886cAb5DB55DCAddf",
          "AvatarAddress",
          "0x0000000000000000000000000000000000000000"
@@ -123,46 +108,46 @@
    ],
    "VotingMachinesParams":[
       {
-         "boostedVotePeriodLimit":604800,
+         "boostedVotePeriodLimit":300,
          "daoBountyConst":10,
          "minimumDaoBounty":150,
-         "queuedVotePeriodLimit":3888000,
+         "queuedVotePeriodLimit":3600,
          "queuedVoteRequiredPercentage":50,
-         "preBoostedVotePeriodLimit":86400,
+         "preBoostedVotePeriodLimit":600,
          "proposingRepReward":5000,
-         "quietEndingPeriod":86400,
+         "quietEndingPeriod":1800,
          "thresholdConst":1200,
          "voteOnBehalf":"0x0000000000000000000000000000000000000000",
          "votersReputationLossRatio":4,
-         "activationTime":1576324800
+         "activationTime":1571139000
       },
       {
-         "boostedVotePeriodLimit":1209600,
+         "boostedVotePeriodLimit":300,
          "daoBountyConst":10,
          "minimumDaoBounty":500,
-         "queuedVotePeriodLimit":7776000,
+         "queuedVotePeriodLimit":3600,
          "queuedVoteRequiredPercentage":50,
-         "preBoostedVotePeriodLimit":172800,
+         "preBoostedVotePeriodLimit":600,
          "proposingRepReward":10000,
-         "quietEndingPeriod":345600,
+         "quietEndingPeriod":1800,
          "thresholdConst":1300,
          "voteOnBehalf":"0x0000000000000000000000000000000000000000",
          "votersReputationLossRatio":4,
-         "activationTime":1576324800
+         "activationTime":1571139000
       },
       {
-       "boostedVotePeriodLimit":172800,
+       "boostedVotePeriodLimit":300,
        "daoBountyConst":10,
        "minimumDaoBounty":50,
-       "queuedVotePeriodLimit":1209600,
+       "queuedVotePeriodLimit":3600,
        "queuedVoteRequiredPercentage":50,
-       "preBoostedVotePeriodLimit":14400,
+       "preBoostedVotePeriodLimit":600,
        "proposingRepReward":100,
-       "quietEndingPeriod":28800,
+       "quietEndingPeriod":1800,
        "thresholdConst":1200,
        "voteOnBehalf":"0x0000000000000000000000000000000000000000",
        "votersReputationLossRatio":4,
-       "activationTime":1576324800
+       "activationTime":1571139000
     }
    ],
    "schemes":{
