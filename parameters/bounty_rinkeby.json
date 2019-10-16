@@ -21,7 +21,7 @@
        1573128000,
        1575720000,
        5271588,
-       "0x05A047C9bD8F36B0D9F8AD146176EbA821B3a3AE"
+       "NEC"
      ],
      "fromArc": true
    }
@@ -35,7 +35,7 @@
             {
                "voteParams":1
             },
-            "0x2396A687f75f1a13e3927F1841B291350b0ED977"
+            "ENS_PUBLIC_RESOLVER"
          ],
          "permissions":"0x00000010",
          "alias":"GenericSchemeENSPublicProvider",
@@ -49,7 +49,7 @@
             {
                "voteParams":1
             },
-            "0xe7410170f87102DF0055eB195163A03B7F2Bff4A"
+            "ENS_REGISTERY"
          ],
          "permissions":"0x00000010",
          "alias":"GenericSchemeENSRegistry",
@@ -83,7 +83,7 @@
          "85000000000000000000000",
          900,
          100,
-         "0x05A047C9bD8F36B0D9F8AD146176EbA821B3a3AE",
+         "NEC",
          "0x0000000000000000000000000000000000000000"
        ],
        "permissions":"0x00000000",
