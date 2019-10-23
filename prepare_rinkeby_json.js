@@ -35,7 +35,7 @@ for (let j = 0; j < model_params.CustomSchemes.length; j++) {
         console.log("ContinuousLocking4Reputation error");
       }
       if (model_params.CustomSchemes[j].params[3] === "BOOTSTRAP_END") {
-          model_params.CustomSchemes[j].params[3] = params_json.BOOTSTRAP_START;
+          model_params.CustomSchemes[j].params[3] = params_json.BOOTSTRAP_END;
       }
       else
      {
