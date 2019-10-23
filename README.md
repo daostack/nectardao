@@ -45,6 +45,6 @@ A rinkeby example for the DAO was deployed, with its Avatar on address [0x5B3dd2
 ### Rinkeby:
 
 1. Set parameter json [example](https://github.com/daostack/nectardao/blob/master/parameters/rinkeby_params_23_10.json)
-2. Update `prepare` cmd at package.json https://github.com/daostack/nectardao/blob/master/package.json#L9
+2. Update `prepare` cmd at [package.json](https://github.com/daostack/nectardao/blob/master/package.json#L9)
 3. `npm i`
 4. `npm run migrate_rinkeby --  --private-key <PRIVATE_KEY> --provider https://rinkeby.infura.io/v3/<infuraKey>`
