@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "migrate_production": "daostack-migrate dao --prev-migration node_modules/@daostack/migration/migration.json --gasPrice 30 --params ./parameters/production.json",
-    "prepare": "node ./prepare_rinkeby_json.js ./parameters/model-22-10-2019-rinkeby.json",
+    "prepare": "node ./prepare_rinkeby_json.js ./parameters/model-23-10-2019-rinkeby.json ./parameters/rinkeby_params_23_10.json",
     "migrate_rinkeby": "npm run prepare && daostack-migrate dao --prev-migration node_modules/@daostack/migration/migration.json --gasPrice 30 --params ./params.json"
   },
   "repository": {
