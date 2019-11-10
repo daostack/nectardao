@@ -1,0 +1,77 @@
+ℹ Network:      mainnet
+ℹ Account:      0x2BC1FeD4C65c9B1dc2BaAff2f3198AcC42C41778
+ℹ Balance:      1.274808008021608151ETH
+ℹ Gas price:    30GWei
+ℹ Found an existing previous migration file (/Users/benkaufman/Documents/Work/DAOstack/NectarDAO/nectardao/node_modules/@daostack/migration/migration.json)
+? About to migrate new DAO. Continue? Yes
+ℹ 0x12ebc0b20e4a8021a13f7d45eaaee9a827abb056072e980ae76e1f247d21c503 | 0.00280 ETH | GenesisProtocol parameters set.
+ℹ 0x1cec8fccd7784d0945b17b43b20c35a2288041bf07f1312b75472d1845c46bbb | 0.00280 ETH | GenesisProtocol parameters set.
+ℹ 0x78b66be28545525f9c36e5a71ab2ec66c47b325ff8145576abe7cbdb752c1256 | 0.00279 ETH | GenesisProtocol parameters set.
+ℹ 0x1d00f7a7d7e46c1923336e79c434fc5b96a252d581fd7daf66db3cb06444dc98 | 0.00129 ETH | Scheme Registrar parameters set.
+ℹ 0x6f2057a6ab62dfb532d67ac9a38cfb97c6c476a56656c885e85774cc7426cfc5 | 0.00107 ETH | Contribution Reward parameters set.
+ℹ 0x74314afb1c33ea7472d15ae8ec7b5ca9fb168b0a185891e2a61c5085886b8f87 | 0.01268 ETH | 0x32FeC1A1dF3c2B24B811c093361219e53858f6D4 => NectarRepAllocation
+ℹ 0xacfdd2c994cb8438adfad64edab04caea9cc6a7d20bf1b381a980c960c87efcb | 0.00452 ETH | NectarRepAllocation initialized.
+ℹ 0x2bdef87ebbffa2cd946cd68c72fc5fc27d23b38fad7e953091e3c434992231a0 | 0.05295 ETH | 0x1a687Fc4C7CB20cFc8100Db321334A70F82140F7 => GenericScheme
+ℹ 0xa4758478c478f11c5f6b8eed965a2cce81acd24618b3cc7a10c1d740350b666c | 0.00327 ETH | GenericScheme initialized.
+ℹ 0x07e2289761e19106d210699ba652967f8bdbe59d6c125216a7d5b635f69020c8 | 0.05295 ETH | 0x35283DAf1B4C33B522EE6f6343223893E7fe538F => GenericScheme
+ℹ 0xc68dc8a9a4e19f1b71b2c208671b4db1bdfb6b4de016835068eb23b292aba32f | 0.00327 ETH | GenericScheme initialized.
+ℹ 0x3568b613c9e0f21af5a96ca457fea8085b3c6efaf9d094a0cbd33c23f286e29e | 0.05295 ETH | 0xF08dd8d418482d24Bb9Af892F697b30E0b8E9f49 => GenericScheme
+ℹ 0x743592b505e20b3501e00591d3aaa83e952afd8b5e2b15da4ffae469891a1f67 | 0.00327 ETH | GenericScheme initialized.
+✖ Migration failed with error: Error: The contract code couldn't be stored, please check your gas limit.
+
+ℹ Network:      mainnet
+ℹ Account:      0x2BC1FeD4C65c9B1dc2BaAff2f3198AcC42C41778
+ℹ Balance:      1.020346328021608151ETH
+ℹ Gas price:    30GWei
+ℹ Found an existing previous migration file (/Users/benkaufman/Documents/Work/DAOstack/NectarDAO/nectardao/node_modules/@daostack/migration/migration.json)
+? About to migrate new DAO. Continue? Yes
+ℹ 0x91db58dde1b0206305985559a1b86becce0355d2086be55f5ccd1f726d80ab86 | 0.05786 ETH | 0x1AC2Fef0E114a6FB7f83280Fe84685A1194779F0 => ContinuousLocking4Reputation
+ℹ 0xbb5c893c07a1d3f785acecd5856e0c83f708d67c176905125cb0f78a8e6f7445 | 0.00703 ETH | ContinuousLocking4Reputation initialized.
+ℹ 0xf17d40ecdb4f6c5aefaa35d9b29e4dce98c7162d8800e928e14d66f3601615a5 | 0.03720 ETH | 0xB4E46B09A1ba9181aa4b24Ce3628b0dE716b3FaF => Auction4Reputation
+ℹ 0x3e41e625cace240e339df7f21aff3d98e7746ad2e0eb4b5f9fc13193b1d5cb97 | 0.00704 ETH | Auction4Reputation initialized.
+ℹ 0x9a67c257d64629c4f1414cd29539e4922aaa6407f956e4a5bee237c7b7760711 | 0.02354 ETH | 0x5AE94FFEF6cA6b9D6e923F47D2a4482CB00f2501 => ReputationFromToken
+ℹ 0x3e080276c050343b83f8299961a4f7b931afc9864d14b4e7e8ea7b64856857ab | 0.00212 ETH | ReputationFromToken initialized.
+ℹ 0xb9718827b849b0c458cbf39c539f79b781f6cd1a55af82b1f2a980aeca2e427e | 0.00990 ETH | DAO schemes set.
+{
+  "name": "necDAO",
+  "Avatar": "0xdbF124AfFA4329CAFec596CD499F46A9d2973fe3",
+  "DAOToken": "0x8c67d177f78CA754c77545eCAA9f7f5bf14d6bBE",
+  "Reputation": "0xCC43aF9535F3DCD24106Aab564951455aB50eA45",
+  "Controller": "0x54d9AdB4f112f0Dd0764Cd084F74298302dE97FF",
+  "Schemes": [
+    {
+      "name": "GenericScheme",
+      "alias": "GenericSchemeENSPublicProvider",
+      "address": "0x1a687Fc4C7CB20cFc8100Db321334A70F82140F7"
+    },
+    {
+      "name": "GenericScheme",
+      "alias": "GenericSchemeENSRegistry",
+      "address": "0x35283DAf1B4C33B522EE6f6343223893E7fe538F"
+    },
+    {
+      "name": "GenericScheme",
+      "alias": "GenericSchemeRegistryLookup",
+      "address": "0xF08dd8d418482d24Bb9Af892F697b30E0b8E9f49"
+    },
+    {
+      "name": "ContinuousLocking4Reputation",
+      "alias": "InfiniteReputation4Token",
+      "address": "0x1AC2Fef0E114a6FB7f83280Fe84685A1194779F0"
+    },
+    {
+      "name": "Auction4Reputation",
+      "alias": "GENAuction",
+      "address": "0xB4E46B09A1ba9181aa4b24Ce3628b0dE716b3FaF"
+    },
+    {
+      "name": "ReputationFromToken",
+      "alias": "ReputationFromToken",
+      "address": "0x5AE94FFEF6cA6b9D6e923F47D2a4482CB00f2501"
+    }
+  ],
+  "arcVersion": "0.0.1-rc.30"
+}
+ℹ DAO Migration has Finished Successfully!
+ℹ Finished in 12 minutes and costed 0.14469489ETH
+✔ Wrote results to /Users/benkaufman/Documents/Work/DAOstack/NectarDAO/nectardao/node_modules/@daostack/migration/migration.json.
