@@ -14,17 +14,21 @@
       }
    ],
    "StandAloneContracts":[
-     {
-     "name": "NectarRepAllocation",
-     "params": [
-       "100000000000000000000000",
-       "BOOTSTRAP_START",
-       "BOOTSTRAP_END",
-       "SNAPSHOT_BLOCK",
-       "NEC"
-     ],
-     "fromArc": true
-   }
+      {
+         "name": "NectarRepAllocation",
+         "params": [
+            "100000000000000000000000",
+            "BOOTSTRAP_START",
+            "BOOTSTRAP_END",
+            "SNAPSHOT_BLOCK",
+            "NEC"
+         ],
+         "fromArc": true
+      },
+      {
+         "name": "RegistryLookup",
+         "fromArc": false
+      }
    ],
    "CustomSchemes":[
       {
@@ -64,7 +68,7 @@
             {
                "voteParams":2
             },
-            "REGISTERY_LOOKUP"
+            { "StandAloneContract": 1 }
          ],
          "permissions":"0x00000010",
          "alias":"GenericSchemeRegistryLookup",
