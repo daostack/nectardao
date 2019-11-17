@@ -78,7 +78,7 @@ for (let j = 0; j < model_params.CustomSchemes.length; j++) {
         }
       }
 }
-
+if (model_params.StandAloneContracts !== undefined) {
 for (let j = 0; j < model_params.StandAloneContracts.length; j++) {
     if (model_params.StandAloneContracts[j].name === "NectarRepAllocation") {
         if (model_params.StandAloneContracts[j].params[1] === "BOOTSTRAP_START") {
@@ -95,10 +95,12 @@ for (let j = 0; j < model_params.StandAloneContracts.length; j++) {
         }
       }
 }
-
+}
+if (model_params.VotingMachinesParams !== undefined) {
    for (let j = 0; j < model_params.VotingMachinesParams.length; j++) {
         model_params.VotingMachinesParams[j].activationTime = timestamp.fromDate(params_json.GOVERNANCE_START);
    }
+ }
 
    fs.writeFileSync('params.json', JSON.stringify(model_params), 'utf8');
 
