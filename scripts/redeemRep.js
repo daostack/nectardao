@@ -19,10 +19,11 @@ async function startRedeem() {
 async function redeemCLT4R() {
     const ContinuousLockingToken4Reputation = require("@daostack/migration/contracts/0.0.1-rc.30/ContinuousLocking4Reputation.json").abi;
     let continuousLockingToken4Reputation = new web3.eth.Contract(ContinuousLockingToken4Reputation, process.env.CLT4RAddress);
+    console.log("Started listening to Lock Events on ContinuousLocking4Reputation Scheme: " +  process.env.CLT4RAddress)
     continuousLockingToken4Reputation.events
     .LockToken(
         {
-            fromBlock: 5457638
+            fromBlock: process.env.from_block
         },
         async (error, events) => {
             if (nonce === -1) {
@@ -79,14 +80,14 @@ async function redeemCLT4R() {
                             console.log(error);
                         }
                     })
-                    .on("confirmation", function(_, receipt) {
-                    console.log(
-                        "Redeem transaction: " +
-                        receipt.transactionHash +
-                        " for account: " +
-                        beneficiary +
-                        " was successfully confirmed."
-                    );
+                    .on("receipt", function(receipt) {
+                        console.log(
+                            "Redeem transaction: " +
+                            receipt.transactionHash +
+                            " for account: " +
+                            beneficiary +
+                            " was successfully confirmed. Redeem amount: " + Number(web3.utils.fromWei(redeemCall.toString()))
+                        );
                     })
                     .on("error", console.error);
                 } else {
@@ -109,10 +110,17 @@ async function redeemCLT4R() {
 async function redeemA4R() {
     const Auction4Reputation = require("@daostack/migration/contracts/0.0.1-rc.30/Auction4Reputation.json").abi;
     let auction4Reputation = new web3.eth.Contract(Auction4Reputation, process.env.Auction4ReputationAddress);
+    console.log("Started listening to Lock Events on Auction4Reputation Scheme: " +  process.env.Auction4ReputationAddress)
     auction4Reputation.events
     .Bid(
-        {},
+        { 
+            fromBlock: process.env.from_block
+        },
         async (error, events) => {
+            if (nonce === -1) {
+                nonce = (await web3.eth.getTransactionCount(web3.eth.defaultAccount)) - 1;
+            }
+            
             if (!error) {
                 let beneficiary = events.returnValues._bidder;
                 let auctionId = events.returnValues._auctionId;
@@ -163,14 +171,14 @@ async function redeemA4R() {
                             console.log(error);
                         }
                     })
-                    .on("confirmation", function(_, receipt) {
-                    console.log(
-                        "Redeem transaction: " +
-                        receipt.transactionHash +
-                        " for account: " +
-                        beneficiary +
-                        " was successfully confirmed."
-                    );
+                    .on("receipt", function(receipt) {
+                        console.log(
+                            "Redeem transaction: " +
+                            receipt.transactionHash +
+                            " for account: " +
+                            beneficiary +
+                            " was successfully confirmed. Redeem amount: " + Number(web3.utils.fromWei(redeemCall.toString()))
+                        );
                     })
                     .on("error", console.error);
                 } else {
