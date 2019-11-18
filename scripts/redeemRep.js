@@ -1,8 +1,8 @@
 require("dotenv").config();
 
-let privateKey = process.env.PRIVATE_KEY;
-let web3WSProvider = process.env.WEB3_WS_PROVIDER;
-let gasPrice = process.env.GAS_PRICE;
+let privateKey = process.env.private_key;
+let web3WSProvider = process.env.ws_provider;
+let gasPrice = process.env.gas_price;
 let nonce = -1;
 
 // Setting up Web3 instance
