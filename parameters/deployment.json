@@ -27,7 +27,15 @@
       },
       {
          "name": "RegistryLookup",
-         "fromArc": false
+         "fromArc": false,
+         "runFunctions": [
+            { 
+               "functionName": "transferOwnership",
+               "params": [
+                  "AvatarAddress"
+               ]
+            }
+         ]
       }
    ],
    "CustomSchemes":[
