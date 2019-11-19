@@ -49,13 +49,14 @@ for (let j = 0; j < model_params.CustomSchemes.length; j++) {
       {
         console.log("ContinuousLocking4Reputation error");
       }
-      if (model_params.CustomSchemes[j].params[3] === "BOOTSTRAP_END") {
-          model_params.CustomSchemes[j].params[3] = timestamp.fromDate(params_json.BOOTSTRAP_END);
+      if (model_params.CustomSchemes[j].params[9] === "AGREEMENT_HASH") {
+          model_params.CustomSchemes[j].params[9] = params_json.AGREEMENT_HASH;
       }
       else
      {
        console.log("ContinuousLocking4Reputation error");
      }
+     model_params.CustomSchemes[j].params[3] = timestamp.fromDate(params_json.BOOTSTRAP_END);
     }
       if (model_params.CustomSchemes[j].name === "Auction4Reputation") {
         if (model_params.CustomSchemes[j].params[5] === "GEN") {
@@ -76,7 +77,22 @@ for (let j = 0; j < model_params.CustomSchemes.length; j++) {
         {
           console.log("Auction4Reputation error");
         }
+        if (model_params.CustomSchemes[j].params[7] === "AGREEMENT_HASH") {
+            model_params.CustomSchemes[j].params[7] = params_json.AGREEMENT_HASH;
+        } else
+        {
+          console.log("Auction4Reputation error");
+        }
       }
+      if (model_params.CustomSchemes[j].name === "ReputationFromToken") {
+        if (model_params.CustomSchemes[j].params[2] === "AGREEMENT_HASH") {
+            model_params.CustomSchemes[j].params[2] = params_json.AGREEMENT_HASH;
+        }
+        else
+       {
+         console.log("ReputationFromToken error");
+       }
+     }
 }
 
 for (let j = 0; j < model_params.StandAloneContracts.length; j++) {

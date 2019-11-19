@@ -29,7 +29,7 @@
          "name": "RegistryLookup",
          "fromArc": false,
          "runFunctions": [
-            { 
+            {
                "functionName": "transferOwnership",
                "params": [
                   "AvatarAddress"
@@ -96,7 +96,7 @@
          900,
          100,
          "NEC",
-         "0x0000000000000000000000000000000000000000"
+         "AGREEMENT_HASH"
        ],
        "permissions":"0x00000010",
        "alias":"InfiniteReputation4Token",
@@ -114,7 +114,7 @@
          "BOOTSTRAP_END",
          "GEN",
          "AvatarAddress",
-         "0x0000000000000000000000000000000000000000"
+         "AGREEMENT_HASH"
        ],
        "permissions":"0x00000010",
        "alias":"GENAuction",
@@ -125,7 +125,8 @@
        "isUniversal": false,
        "params": [
          {"StandAloneContract":0},
-         "0x0000000000000000000000000000000000000000"
+         "0x0000000000000000000000000000000000000000",
+         "AGREEMENT_HASH"
        ],
        "alias" : "ReputationFromToken",
        "fromArc": true,
