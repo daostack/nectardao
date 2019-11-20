@@ -1,0 +1,114 @@
+ℹ Network: 	rinkeby
+ℹ Account: 	0x73Db6408abbea97C5DB8A2234C4027C315094936
+ℹ Balance: 	1.276956177379121403ETH
+ℹ Gas price: 	40GWei
+ℹ Found an existing previous migration file (/Users/oren/daostack/nectardao/node_modules/@daostack/migration/migration.json)
+? About to migrate new DAO. Continue? Yes
+ℹ 0x5f924bd2f7c1ab83597e4f9a48ff6b761ab9e95adbd70c3cfbdcfe2110112471 | 0.22576 ETH | Created new organization.
+ℹ 0xa36827e65d048256c9dc34d913c33bc4966449d827a40407d0bc931d2fbd8c8f | 0.01071 ETH | GenesisProtocol parameters set. | Params Hash: 0x92f8b0baa15868a95b07960e6f28f3164222d64aeb1a5513d8fe768aee6e375c
+Parameters:
+50,
+3600,
+300,
+600,
+1200,
+300,
+5000000000000000000000,
+4,
+150000000000000000000,
+10,
+1574339400,
+0x0000000000000000000000000000000000000000
+ℹ 0x47c0c07c25b4d7fc9975fd5f46d178d247b38ae5e0215c17586fdb4fba852833 | 0.01071 ETH | GenesisProtocol parameters set. | Params Hash: 0x4ca9eaddb3c698cfd4d5f3c1a80773092faabacecfc0a20bc936acd5dcd29e66
+Parameters:
+50,
+3600,
+300,
+600,
+1300,
+300,
+10000000000000000000000,
+4,
+500000000000000000000,
+10,
+1574339400,
+0x0000000000000000000000000000000000000000
+ℹ 0x6d7defb65469b97b038ba0b400b967620ab01bbbc508e5444bdfa3f12fa5d72f | 0.01071 ETH | GenesisProtocol parameters set. | Params Hash: 0x9f690b4be322f72d42c2757b80a93ea5258f4cfb560ad0cf9e698bc83a6b6bf3
+Parameters:
+50,
+3600,
+300,
+600,
+1200,
+300,
+100000000000000000000,
+4,
+50000000000000000000,
+10,
+1574339400,
+0x0000000000000000000000000000000000000000
+ℹ 0x0b020425f82725882d382e319bd3fb5d51feb710859715fb00e8f941774c54df | 0.00336 ETH | Scheme Registrar parameters set. | Params Hash: 0xb83a055a65ac6d0e58964d5adcf4f8e15efc058e61e42d0298efe036a73d0a2c
+Parameters:
+0x4ca9eaddb3c698cfd4d5f3c1a80773092faabacecfc0a20bc936acd5dcd29e66,
+0x4ca9eaddb3c698cfd4d5f3c1a80773092faabacecfc0a20bc936acd5dcd29e66,
+0x35984c26D661d69fB589844202358B3e6c438a3b
+ℹ 0x3e7a0796cfecade5e456358c752016efcc4263ae5a9a5a68582109c3434598ba | 0.00254 ETH | Contribution Reward parameters set. | Params Hash: 0xb4eae5c5b022a091f072f47bf63068bff48f897e7fd2b4ffd6ad39e5218a5f40
+Parameters:0x92f8b0baa15868a95b07960e6f28f3164222d64aeb1a5513d8fe768aee6e375c,
+0x35984c26D661d69fB589844202358B3e6c438a3b
+ℹ 0xbb1b8f3c10602f467f9cf4356bce6ea79ba4683a4b3fa703bbc4f07d595bc927 | 0.01409 ETH | 0x90f896E543CD0EDdCb87c1A7D02833e11F905e93 => NectarRepAllocation
+ℹ 0x5087597c865dba7b510496e6c5b27bd76bcb1e5e52a15c5a29631075456bdc32 | 0.00625 ETH | NectarRepAllocation initialized.
+ℹ 0x9edf7f5a47b75918da8e4af2464c4e553968a027f0f991e0d9530e30ddd92e77 | 0.06068 ETH | 0x3A7D62335b96c6B53b41cA72D7AB1e924c51e591 => RegistryLookup
+ℹ 0x62457cbb1cc85980221e6229acbf517242a730d4a55ffff61f330e7af392a774 | 0.00125 ETH | RegistryLookup called function transferOwnership.
+ℹ 0x900ce4dd5b035ab60e20044364ae55335ce0831c7627f944bd5df36e9ce529da | 0.05758 ETH | 0xa38756b6d9534C8F176D21466238B703e69E40B8 => GenericScheme
+ℹ 0x9b7e115bbe25c7528b7fc70f9a3265cbad692dbad0fa9f490e29d87047c1d28a | 0.00426 ETH | GenericScheme initialized.
+ℹ 0x71ab8ddc420f94f0689dc0b1705be906ed6010162876d953bd17c5031c3d23a8 | 0.05758 ETH | 0xeC4517176619ff0E41c9b48334a4Ea2A5C00c076 => GenericScheme
+ℹ 0xe6c7c92f72a36010be1678c701917674d36403fa0a8d5af58a58ae40e3c5107c | 0.00426 ETH | GenericScheme initialized.
+ℹ 0x5a2ee99f7bc5f3f8c76ac23046c4b2d992545a7b52649e453977decb3c6487ac | 0.05758 ETH | 0xB9F5b31e30C6f39f7d302440d6FBf7557d653633 => GenericScheme
+ℹ 0xdcc98ab52e7445956bcb6aa38f66ba5f991a508e07596b93e3ef71c288e57ba1 | 0.00426 ETH | GenericScheme initialized.
+ℹ 0x6c95d5610ec3425c9d36242969ed01a941eca280611a0939f7e067f5f9fd9dc4 | 0.06280 ETH | 0x8d404c8dd8f137d4bd89bE8eF31d73acecB47B39 => ContinuousLocking4Reputation
+ℹ 0x8d350502cce734993251849be34aade19489495755634a247ec55c6deff73388 | 0.00996 ETH | ContinuousLocking4Reputation initialized.
+ℹ 0xd2f58b356df61fb7ca81de22ea84999fd4142fe4508615efb90e39b2fd4bb64e | 0.04053 ETH | 0xDbf136D4Cf998742dbAbFb169f40e8f03a3F2fBa => Auction4Reputation
+ℹ 0x9a07aeb8e0e1f21fb683ed87a6913173f36ae3662f64e6c7384ab7b020e03f0f | 0.00994 ETH | Auction4Reputation initialized.
+ℹ 0x5036f16bcafe9f7b3bb612c831ba1437a9853e171e28852ae64e7c15fa61e48c | 0.02863 ETH | 0xd7CA0df2F884549FcC44363Ac7aAC33E5b1C8994 => ReputationFromToken
+ℹ 0x0ffe8ccdc218793d51ca4312044078ae0daf12e4f4b97175ee3302032f008151 | 0.00351 ETH | ReputationFromToken initialized.
+ℹ 0xe74105c8ed46a9e713d5c2bc91f01e70a2abc545d855fea029dfa0823d62f040 | 0.01355 ETH | DAO schemes set.
+{
+  "name": "necDAO",
+  "Avatar": "0x0F1967dE58d9517C2e21bccb1Db8974622558139",
+  "DAOToken": "0x4fE62c0e05d1548b79d61dd30C85ba54DF82Fc0A",
+  "Reputation": "0xD48Ea8E57124bC8f2288768DBaAf01b0788d1771",
+  "Controller": "0x61568544C5e506938b6b52013cF4D7a322Fc3E32",
+  "Schemes": [
+    {
+      "name": "GenericScheme",
+      "alias": "GenericSchemeENSPublicProvider",
+      "address": "0xa38756b6d9534C8F176D21466238B703e69E40B8"
+    },
+    {
+      "name": "GenericScheme",
+      "alias": "GenericSchemeENSRegistry",
+      "address": "0xeC4517176619ff0E41c9b48334a4Ea2A5C00c076"
+    },
+    {
+      "name": "GenericScheme",
+      "alias": "GenericSchemeRegistryLookup",
+      "address": "0xB9F5b31e30C6f39f7d302440d6FBf7557d653633"
+    },
+    {
+      "name": "ContinuousLocking4Reputation",
+      "alias": "InfiniteReputation4Token",
+      "address": "0x8d404c8dd8f137d4bd89bE8eF31d73acecB47B39"
+    },
+    {
+      "name": "Auction4Reputation",
+      "alias": "GENAuction",
+      "address": "0xDbf136D4Cf998742dbAbFb169f40e8f03a3F2fBa"
+    },
+    {
+      "name": "ReputationFromToken",
+      "alias": "ReputationFromToken",
+      "address": "0xd7CA0df2F884549FcC44363Ac7aAC33E5b1C8994"
+    }
+  ],
+  "arcVersion": "0.0.1-rc.33"
+}
