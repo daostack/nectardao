@@ -34,7 +34,7 @@ A rinkeby example for the DAO was deployed, with its Avatar on address [0x5B3dd2
   Production [voting parameters](https://docs.google.com/spreadsheets/d/1vt79eXdrc-kn04dRj5Qk-9xEqctPm5YcPEFI-qecQC4/edit#gid=0)
 
 ### Contracts
- The dao contracts are based on [arc version 0.0.1-rc.30](https://github.com/daostack/arc/releases/tag/0.0.1-rc.30)
+ The dao contracts are based on [arc version 0.0.1-rc.33](https://github.com/daostack/arc/releases/tag/0.0.1-rc.33)
 #### Reputaiton bootstrap schemes
  [locking batches](https://github.com/daostack/arc/blob/0.0.1-rc.30/contracts/schemes/ContinuousLockingToken4Reputation.sol)
  [nec snapshot](https://github.com/daostack/arc/blob/0.0.1-rc.30/contracts/schemes/ReputationFromToken.sol)
@@ -42,9 +42,10 @@ A rinkeby example for the DAO was deployed, with its Avatar on address [0x5B3dd2
 
  [gen auction](https://github.com/daostack/arc/blob/0.0.1-rc.30/contracts/schemes/Auction4Reputation.sol)
 ## Deployment
-### Rinkeby:
 
-1. Set parameter json [example](https://github.com/daostack/nectardao/blob/master/parameters/rinkeby_params_23_10.json)
-2. Update `prepare` cmd at [package.json](https://github.com/daostack/nectardao/blob/master/package.json#L9)
-3. `npm i`
-4. `npm run migrate --  --private-key <PRIVATE_KEY> --provider https://mainnet.infura.io/v3/<infuraKey>`
+1. Add .env file which include the `provider` url
+   e.g `provider="https://mainnet.infura.io/v3/1234`
+2. Set parameter json [example](https://github.com/daostack/nectardao/blob/master/parameters/model-params-25_11.json)
+3. Update `prepare` cmd at [package.json](https://github.com/daostack/nectardao/blob/master/package.json#L9)
+4. `npm i`
+5. `npm run migrate --  --private-key <PRIVATE_KEY> --provider https://mainnet.infura.io/v3/<infuraKey>`
