@@ -1,26 +1,34 @@
 require("dotenv").config();
 
-let privateKey = process.env.private_key;
-let web3WSProvider = process.env.ws_provider;
-let fromBlock = process.env.from_block
-let nonce = -1;
-
-// Setting up Web3 instance
 const Web3 = require("web3");
-const web3 = new Web3(new Web3.providers.WebsocketProvider(web3WSProvider));
-let account = web3.eth.accounts.privateKeyToAccount(privateKey);
-web3.eth.accounts.wallet.add(account);
-web3.eth.defaultAccount = account.address;
-let gasPrice = web3.utils.toWei(process.env.gas_price, "gwei");
+let web3, fromBlock, CLT4RAddress, Auction4ReputationAddress;
 
-async function startRedeem() {
+async function startRedeem(
+    _web3Provider=process.env.ws_provider,
+    _privateKey=process.env.private_key,
+    _gasPrice=process.env.gas_price,
+    _fromBlock=process.env.from_block,
+    _nectarRedeemerAddress=process.env.NectarReputationRedeemerAddress,
+    _CLT4RAddress=process.env.CLT4RAddress,
+    _Auction4ReputationAddress=process.env.Auction4ReputationAddress
+) {
+    web3 = new Web3(_web3Provider, null, {
+        transactionConfirmationBlocks: 1
+    })
+    let account = web3.eth.accounts.privateKeyToAccount(_privateKey);
+    web3.eth.accounts.wallet.add(account);
+    web3.eth.defaultAccount = account.address;
+    fromBlock = _fromBlock
+    CLT4RAddress = _CLT4RAddress
+    Auction4ReputationAddress = _Auction4ReputationAddress
+
     const NectarReputationRedeemer = require("../build/contracts/NectarReputationRedeemer").abi;
-    let nectarReputationRedeemer = new web3.eth.Contract(NectarReputationRedeemer, process.env.NectarReputationRedeemerAddress);
+    let nectarReputationRedeemer = new web3.eth.Contract(NectarReputationRedeemer, _nectarRedeemerAddress);
 
     let clt4rRedeems = await getRedeemsForCLT4R()
     let auction4rRedeems = await getRedeemsForAuction4R()
 
-    const redeemsBatchSize = 100
+    const redeemsBatchSize = 10
     let redeemsCount = clt4rRedeems.length > auction4rRedeems.length ? clt4rRedeems.length : auction4rRedeems.length
     let redeemsCounter = 0
     while (redeemsCount > 0) {
@@ -28,28 +36,29 @@ async function startRedeem() {
         let clt4rRedeemsBatch = clt4rRedeems.slice(redeemsCounter * redeemsBatchSize, redeemsCounter  * redeemsBatchSize + currentBatchCount)
         let auction4rRedeemsBatch = auction4rRedeems.slice(redeemsCounter * redeemsBatchSize, redeemsCounter  * redeemsBatchSize + currentBatchCount)
         
-        tx = await nectarReputationRedeemer.methods.redeem([
-            process.env.CLT4RAddress,
+        tx = await nectarReputationRedeemer.methods.redeem(
+            CLT4RAddress,
             clt4rRedeemsBatch,
-            process.env.Auction4ReputationAddress,
+            Auction4ReputationAddress,
             auction4rRedeemsBatch
-        ])
+        )
 
         let gas
+        const blockLimit = (await web3.eth.getBlock('latest')).gasLimit
         try {
-            gas = (await tx.estimateGas())
-            if (gas * 1.1 < block - 100000) {
+            gas = await tx.estimateGas()
+            if (gas * 1.1 < blockLimit - 100000) {
                 gas *= 1.1
             }
         } catch (error) {
             gas = blockLimit - 100000
         }
-
+        gas = parseInt(gas)
+        console.log("GAS " + gas)
         await tx.send({
             from: web3.eth.defaultAccount,
             gas,
-            gasPrice,
-            nonce: ++nonce
+            _gasPrice,
         }).on("confirmation", function(_, receipt) {
             console.log(
                 `Transaction ${receipt.transactionHash} successfully redeemed ${clt4rRedeemsBatch.length} CLT4Reputation locks and ${auction4rRedeemsBatch.length} AuctionReputation bids`
@@ -64,8 +73,8 @@ async function startRedeem() {
 
 async function getRedeemsForCLT4R() {
     let redeems = []
-    const ContinuousLockingToken4Reputation = require("@daostack/migration/contracts/0.0.1-rc.30/ContinuousLocking4Reputation.json").abi;
-    let continuousLockingToken4Reputation = new web3.eth.Contract(ContinuousLockingToken4Reputation, process.env.CLT4RAddress);
+    const ContinuousLockingToken4Reputation = require("@daostack/migration/contracts/0.0.1-rc.33/ContinuousLocking4Reputation.json").abi;
+    let continuousLockingToken4Reputation = new web3.eth.Contract(ContinuousLockingToken4Reputation, CLT4RAddress);
     let events = await continuousLockingToken4Reputation.getPastEvents('LockToken', { fromBlock, toBlock: 'latest' })
     for (let event of events) {
         let beneficiary = event.returnValues._locker;
@@ -82,7 +91,7 @@ async function getRedeemsForCLT4R() {
         await continuousLockingToken4Reputation.methods
         .redeem(beneficiary, id)
         .estimateGas()
-        .catch(error => {
+        .catch(() => {
             failed = true;
         });
         if (!failed &&
@@ -96,13 +105,21 @@ async function getRedeemsForCLT4R() {
 
 async function getRedeemsForAuction4R() {
     let redeems = []
-    const Auction4Reputation = require("@daostack/migration/contracts/0.0.1-rc.30/Auction4Reputation.json").abi;
-    let auction4Reputation = new web3.eth.Contract(Auction4Reputation, process.env.Auction4ReputationAddress);
+    let auctions = []
+    const Auction4Reputation = require("@daostack/migration/contracts/0.0.1-rc.33/Auction4Reputation.json").abi;
+    let auction4Reputation = new web3.eth.Contract(Auction4Reputation, Auction4ReputationAddress);
     let events = await auction4Reputation.getPastEvents('Bid', { fromBlock, toBlock: 'latest' })
     for (let event of events) {
         let beneficiary = event.returnValues._bidder;
         let id = event.returnValues._auctionId;
-
+        if (!auctions[id]) {
+            auctions[id] = {}
+        }
+        if (auctions[id] && auctions[id][beneficiary]) {
+            continue
+        } else {
+            auctions[id][beneficiary] = true
+        }
         // Check if can close the proposal as expired and claim the bounty
         let failed = false;
         let redeemCall = await auction4Reputation.methods
