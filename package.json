@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "migrate_prod": "npm run prepare_prod && daostack-migrate dao --prev-migration node_modules/@daostack/migration/migration.json --gasPrice 20 --params ./params.json --custom-abis-location ./custom-abis --arc-version 0.0.1-rc.33"
+    "migrate_prod": "npm run prepare_prod && daostack-migrate dao --prev-migration node_modules/@daostack/migration/migration.json --gasPrice 20 --params ./params.json --custom-abis-location ./custom-abis --arc-version 0.0.1-rc.33",
     "migrate": "npm run prepare && daostack-migrate dao --prev-migration node_modules/@daostack/migration/migration.json --gasPrice 20 --params ./params.json --custom-abis-location ./custom-abis --arc-version 0.0.1-rc.33",
     "prepare": "node ./prepare.js ./parameters/deployment.json ./parameters/mainnet_params_25_11.json",
     "prepare_prod": "node ./prepare.js ./parameters/deployment_prod.json ./parameters/production_mainnet_params.json",
