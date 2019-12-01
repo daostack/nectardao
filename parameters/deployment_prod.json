@@ -14,17 +14,29 @@
       }
    ],
    "StandAloneContracts":[
-     {
-     "name": "NectarRepAllocation",
-     "params": [
-       "100000000000000000000000",
-       1573128000,
-       1573236000,
-       8549305,
-       "0xCc80C051057B774cD75067Dc48f8987C4Eb97A5e"
-     ],
-     "fromArc": true
-   }
+      {
+         "name": "NectarRepAllocation",
+         "params": [
+            "100000000000000000000000",
+            "BOOTSTRAP_START",
+            "BOOTSTRAP_END",
+            "SNAPSHOT_BLOCK",
+            "NEC"
+         ],
+         "fromArc": true
+      },
+      {
+         "name": "RegistryLookup",
+         "fromArc": false,
+         "runFunctions": [
+            {
+               "functionName": "transferOwnership",
+               "params": [
+                  "AvatarAddress"
+               ]
+            }
+         ]
+      }
    ],
    "CustomSchemes":[
       {
@@ -35,25 +47,24 @@
             {
                "voteParams":1
             },
-            "0x0000000000000000000000000000000000000000"
+            "ENS_PUBLIC_RESOLVER"
          ],
          "permissions":"0x00000010",
-         "alias":"GenericSchemeENS",
+         "alias":"GenericSchemeENSPublicProvider",
          "fromArc":true
       },
       {
          "name":"GenericScheme",
          "schemeName":"GenericScheme",
-         "isUniversal":false,
          "params":[
             "GenesisProtocolAddress",
             {
-               "voteParams":0
+               "voteParams":1
             },
-            "0x0000000000000000000000000000000000000000"
+            "ENS_REGISTERY"
          ],
          "permissions":"0x00000010",
-         "alias":"GenericSchemeTrading",
+         "alias":"GenericSchemeENSRegistry",
          "fromArc":true
       },
       {
@@ -65,10 +76,10 @@
             {
                "voteParams":2
             },
-            "0x0000000000000000000000000000000000000000"
+            { "StandAloneContract": 1 }
          ],
          "permissions":"0x00000010",
-         "alias":"GenericSchemeWhitelist",
+         "alias":"GenericSchemeRegistryLookup",
          "fromArc":true
       },
       {
@@ -77,15 +88,15 @@
        "isUniversal":false,
        "params":[
          "850000000000000000000000",
-         1573128000,
-         108000,
-         1573236000,
+         "BOOTSTRAP_START",
+         259200,
+         "BOOTSTRAP_END",
          12,
          "85000000000000000000000",
          900,
          100,
-         "0xCc80C051057B774cD75067Dc48f8987C4Eb97A5e",
-         "0x0000000000000000000000000000000000000000"
+         "NEC",
+         "AGREEMENT_HASH"
        ],
        "permissions":"0x00000010",
        "alias":"InfiniteReputation4Token",
@@ -97,13 +108,13 @@
        "isUniversal":false,
        "params":[
          "50000000000000000000000",
-         1573128000,
+         "BOOTSTRAP_START",
          259200,
          10,
-         1575720000,
-         "0x543Ff227F64Aa17eA132Bf9886cAb5DB55DCAddf",
+         "BOOTSTRAP_END",
+         "GEN",
          "AvatarAddress",
-         "0x0000000000000000000000000000000000000000"
+         "AGREEMENT_HASH"
        ],
        "permissions":"0x00000010",
        "alias":"GENAuction",
@@ -114,7 +125,8 @@
        "isUniversal": false,
        "params": [
          {"StandAloneContract":0},
-         "0x0000000000000000000000000000000000000000"
+         "0x0000000000000000000000000000000000000000",
+         "AGREEMENT_HASH"
        ],
        "alias" : "ReputationFromToken",
        "fromArc": true,
@@ -122,7 +134,7 @@
      }
    ],
    "VotingMachinesParams":[
-      {
+     {
          "boostedVotePeriodLimit":604800,
          "daoBountyConst":10,
          "minimumDaoBounty":150,
@@ -130,11 +142,11 @@
          "queuedVoteRequiredPercentage":50,
          "preBoostedVotePeriodLimit":86400,
          "proposingRepReward":5000,
-         "quietEndingPeriod":86400,
+         "quietEndingPeriod":604800,
          "thresholdConst":1200,
          "voteOnBehalf":"0x0000000000000000000000000000000000000000",
          "votersReputationLossRatio":4,
-         "activationTime":1576324800
+         "activationTime":"GOVERNANCE_START"
       },
       {
          "boostedVotePeriodLimit":1209600,
@@ -148,7 +160,7 @@
          "thresholdConst":1300,
          "voteOnBehalf":"0x0000000000000000000000000000000000000000",
          "votersReputationLossRatio":4,
-         "activationTime":1576324800
+         "activationTime":"GOVERNANCE_START"
       },
       {
        "boostedVotePeriodLimit":172800,
@@ -159,10 +171,10 @@
        "preBoostedVotePeriodLimit":14400,
        "proposingRepReward":100,
        "quietEndingPeriod":28800,
-       "thresholdConst":1200,
+       "thresholdConst":1150,
        "voteOnBehalf":"0x0000000000000000000000000000000000000000",
        "votersReputationLossRatio":4,
-       "activationTime":1576324800
+       "activationTime":"GOVERNANCE_START"
     }
    ],
    "schemes":{
