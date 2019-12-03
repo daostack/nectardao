@@ -28,7 +28,7 @@ async function startRedeem(
     let clt4rRedeems = await getRedeemsForCLT4R()
     let auction4rRedeems = await getRedeemsForAuction4R()
 
-    const redeemsBatchSize = 10
+    const redeemsBatchSize = 45
     let redeemsCount = clt4rRedeems.length > auction4rRedeems.length ? clt4rRedeems.length : auction4rRedeems.length
     let redeemsCounter = 0
     while (redeemsCount > 0) {

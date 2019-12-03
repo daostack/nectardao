@@ -1,4 +1,4 @@
-pragma solidity >=0.4.21 <0.6.0;
+pragma solidity ^0.5.13;
 pragma experimental ABIEncoderV2;
 
 import "@daostack/arc/contracts/schemes/Auction4Reputation.sol";

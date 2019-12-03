@@ -72,13 +72,13 @@ test('redeem nectar reputation', async () => {
       data: require("../build/contracts/NectarReputationRedeemer.json").bytecode
     }).send({ from: web3.eth.accounts.wallet[0].address, gas: 6000000 })
 
-    for (let i = 1; i <= 20; i++) {
+    for (let i = 1; i <= 100; i++) {
         // console.log(`Locking number ${i}`)
         await genToken.methods.mint(web3.eth.accounts.wallet[i % 10].address, web3.utils.toWei(`${i}`)).send(opts)
         await genToken.methods.approve(migrationDAOResult.ContinuousLockingToken4Reputation, web3.utils.toWei(`${i}`)).send({ from: web3.eth.accounts.wallet[i % 10].address })
         await continuousLockingToken4Reputation.methods.lock(web3.utils.toWei(`${i}`), 1, 0, AGREEMENT_HASH).send({ from: web3.eth.accounts.wallet[i % 10].address })
     }
-    for (let i = 1; i <= 20; i++) {
+    for (let i = 1; i <= 10; i++) {
         // console.log(`Bid number ${i}`)
         await genToken.methods.mint(web3.eth.accounts.wallet[i % 10].address, web3.utils.toWei(`${i}`)).send(opts)
         await genToken.methods.approve(migrationDAOResult.Auction4Reputation, web3.utils.toWei(`${i}`)).send({ from: web3.eth.accounts.wallet[i % 10].address })
@@ -99,7 +99,7 @@ test('redeem nectar reputation', async () => {
     )
 
     let clt4rEvents = await continuousLockingToken4Reputation.getPastEvents('Redeem', { fromBlock: 0, toBlock: 'latest' })
-    expect(clt4rEvents.length).toBe(20)
+    expect(clt4rEvents.length).toBe(100)
     for (let i in clt4rEvents) {
         i = Number(i)
         let amount = web3.utils.fromWei(`${clt4rEvents[i].returnValues._amount}`)
