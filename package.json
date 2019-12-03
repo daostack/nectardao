@@ -10,7 +10,8 @@
     "redeem": "node -e 'require(\"./scripts/nectarRedeem.js\").startRedeem()'",
     "test": "jest",
     "build": "truffle compile",
-    "ganache": "npm explore @daostack/migration -- npm install && npm explore @daostack/migration -- npm run ganache",
+    "ganache-prepare": "npm explore @daostack/migration -- npm install",
+    "ganache": "npm explore @daostack/migration -- npm run ganache",
     "migrate-ganache": "daostack-migrate --prev-migration node_modules/@daostack/migration/migration.json --gasPrice 20 --params test/test-parameters.json --arc-version 0.0.1-rc.33 --force --restart",
     "prepare_prod": "node ./prepare.js ./parameters/deployment_prod.json ./parameters/production_mainnet_params.json"
   },
