@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/daostack/nectardao#readme",
   "dependencies": {
-    "@daostack/migration": "0.0.1-rc.33-v1",
+    "@daostack/migration": "0.0.1-rc.34-v0",
     "dotenv": "^8.2.0",
     "ganache-cli": "^6.7.0",
     "truffle": "^5.1.2",
