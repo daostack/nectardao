@@ -28,17 +28,52 @@ async function startRedeem(
     let clt4rRedeems = await getRedeemsForCLT4R()
     let auction4rRedeems = await getRedeemsForAuction4R()
 
-    const redeemsBatchSize = 45
-    let redeemsCount = clt4rRedeems.length > auction4rRedeems.length ? clt4rRedeems.length : auction4rRedeems.length
+    const redeemsBatchSize = 90
+    let redeemsCount = clt4rRedeems.length
     let redeemsCounter = 0
     while (redeemsCount > 0) {
         let currentBatchCount = redeemsCount < redeemsBatchSize ? redeemsCount : redeemsBatchSize
         let clt4rRedeemsBatch = clt4rRedeems.slice(redeemsCounter * redeemsBatchSize, redeemsCounter  * redeemsBatchSize + currentBatchCount)
+        
+        tx = await nectarReputationRedeemer.methods.redeemContinuousLocking4Reputation(
+            CLT4RAddress,
+            clt4rRedeemsBatch
+        )
+
+        let gas
+        const blockLimit = (await web3.eth.getBlock('latest')).gasLimit
+        try {
+            gas = await tx.estimateGas()
+            if (gas * 1.1 < blockLimit - 100000) {
+                gas *= 1.1
+            }
+        } catch (error) {
+            gas = blockLimit - 100000
+        }
+        gas = parseInt(gas)
+        console.log("GAS " + gas)
+        await tx.send({
+            from: web3.eth.defaultAccount,
+            gas,
+            _gasPrice,
+        }).on("confirmation", function(_, receipt) {
+            console.log(
+                `Transaction ${receipt.transactionHash} successfully redeemed ${clt4rRedeemsBatch.length} CLT4Reputation locks.`
+                )
+          })
+          .on("error", console.error);
+
+        redeemsCount -= redeemsBatchSize
+        redeemsCounter++
+    }
+
+    redeemsCount = auction4rRedeems.length
+    redeemsCounter = 0
+    while (redeemsCount > 0) {
+        let currentBatchCount = redeemsCount < redeemsBatchSize ? redeemsCount : redeemsBatchSize
         let auction4rRedeemsBatch = auction4rRedeems.slice(redeemsCounter * redeemsBatchSize, redeemsCounter  * redeemsBatchSize + currentBatchCount)
         
-        tx = await nectarReputationRedeemer.methods.redeem(
-            CLT4RAddress,
-            clt4rRedeemsBatch,
+        tx = await nectarReputationRedeemer.methods.redeemAuction4Reputation(
             Auction4ReputationAddress,
             auction4rRedeemsBatch
         )
@@ -61,7 +96,7 @@ async function startRedeem(
             _gasPrice,
         }).on("confirmation", function(_, receipt) {
             console.log(
-                `Transaction ${receipt.transactionHash} successfully redeemed ${clt4rRedeemsBatch.length} CLT4Reputation locks and ${auction4rRedeemsBatch.length} AuctionReputation bids`
+                `Transaction ${receipt.transactionHash} successfully redeemed ${auction4rRedeemsBatch.length} AuctionReputation bids.`
                 )
           })
           .on("error", console.error);
