@@ -12,5 +12,7 @@ install:
   - nohup npm run ganache &
 
 script:
+  - sleep 60
+  - cat nohup.out
   - npm run build 
   - npm run test
