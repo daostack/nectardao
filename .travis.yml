@@ -9,7 +9,6 @@ before_install:
 
 install:
   - npm ci
-  - npm run ganache-prepare
   - nohup npm run ganache &
 
 script:

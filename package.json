@@ -10,8 +10,8 @@
     "redeem": "node -e 'require(\"./scripts/nectarRedeem.js\").startRedeem()'",
     "test": "jest",
     "build": "truffle compile",
-    "ganache-prepare": "npm explore @daostack/migration -- npm install",
-    "ganache": "npm explore @daostack/migration -- npm run ganache",
+    "ganache-prepare": "rm -rf ./db && cp -r node_modules/@daostack/migration/db ./db",
+    "ganache": "npm run ganache-prepare && mkdirp db && ganache-cli --db=./db -l 8000000 --networkId 1512051714758 --deterministic --hostname=0.0.0.0",
     "migrate-ganache": "daostack-migrate --prev-migration node_modules/@daostack/migration/migration.json --gasPrice 20 --params test/test-parameters.json --arc-version 0.0.1-rc.33 --force --restart",
     "prepare_prod": "node ./prepare.js ./parameters/deployment_prod.json ./parameters/production_mainnet_params.json"
   },
@@ -33,6 +33,7 @@
   "dependencies": {
     "@daostack/migration": "0.0.1-rc.33-v1",
     "dotenv": "^8.2.0",
+    "ganache-cli": "^6.7.0",
     "truffle": "^5.1.2",
     "unix-timestamp": "^0.2.0",
     "web3": "1.0.0-beta.55"
