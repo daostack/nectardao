@@ -1,18 +1,24 @@
-dist: trusty
-
 language: node_js
-
 node_js:
-  - "10.15.0"
+  - '10.16.0'
 
-before_install:
+dist: xenial
+
+services:
+  - docker
+addons:
+  apt:
+    packages:
+      - docker-ce
+      - libsecret-1-dev
 
 install:
   - npm ci
-  - nohup npm run ganache &
+  - docker --version
+  - docker-compose --version
 
 script:
+  - docker-compose up -d
   - sleep 60
-  - cat nohup.out
-  - npm run build 
+  - npm run build
   - npm run test
