@@ -36,7 +36,7 @@ A rinkeby example for the DAO was deployed, with its Avatar on address [0x5B3dd2
 ### Contracts
  The dao contracts are based on [arc version 0.0.1-rc.33](https://github.com/daostack/arc/releases/tag/0.0.1-rc.33)
 #### Reputaiton bootstrap schemes
- [locking batches](https://github.com/daostack/arc/blob/0.0.1-rc.30/contracts/schemes/ContinuousLockingToken4Reputation.sol)
+ [locking batches](https://github.com/daostack/arc/blob/0.0.1-rc.30/contracts/schemes/ContinuousLocking4Reputation.sol)
  [nec snapshot](https://github.com/daostack/arc/blob/0.0.1-rc.30/contracts/schemes/ReputationFromToken.sol)
  - Will use (nectar rep allocation)[https://github.com/daostack/arc/blob/0.0.1-rc.30/contracts/test/NectarRepAllocation.sol] as a link contract to the nec token contract
 

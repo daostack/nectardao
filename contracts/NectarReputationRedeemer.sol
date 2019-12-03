@@ -2,7 +2,7 @@ pragma solidity ^0.5.13;
 pragma experimental ABIEncoderV2;
 
 import "@daostack/arc/contracts/schemes/Auction4Reputation.sol";
-import "@daostack/arc/contracts/schemes/ContinuousLockingToken4Reputation.sol";
+import "@daostack/arc/contracts/schemes/ContinuousLocking4Reputation.sol";
 
 contract NectarReputationRedeemer {
     struct Redeem {
