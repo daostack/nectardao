@@ -4,12 +4,13 @@
   "description": "nectar dao deployment repo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "migrate_prod": "npm run prepare_prod && daostack-migrate dao --prev-migration node_modules/@daostack/migration/migration.json --gasPrice 20 --params ./params.json --custom-abis-location ./custom-abis --arc-version 0.0.1-rc.33",
-    "migrate": "npm run prepare && daostack-migrate dao --prev-migration node_modules/@daostack/migration/migration.json --gasPrice 20 --params ./params.json --custom-abis-location ./custom-abis --arc-version 0.0.1-rc.33",
     "prepare": "node ./prepare.js ./parameters/deployment.json ./parameters/mainnet_params_25_11.json",
-    "prepare_prod": "node ./prepare.js ./parameters/deployment_prod.json ./parameters/production_mainnet_params.json",
-    "redeem": "node -e 'require(\"./scripts/redeemRep.js\").startRedeem()'"
+    "migrate": "npm run prepare && daostack-migrate dao --prev-migration node_modules/@daostack/migration/migration.json --gasPrice 20 --params ./params.json --custom-abis-location ./custom-abis --arc-version 0.0.1-rc.33",
+    "redeem": "node -e 'require(\"./scripts/nectarRedeem.js\").startRedeem()'",
+    "test": "jest",
+    "build": "truffle compile",
+    "prepare_prod": "node ./prepare.js ./parameters/deployment_prod.json ./parameters/production_mainnet_params.json"
   },
   "repository": {
     "type": "git",
@@ -27,9 +28,14 @@
   },
   "homepage": "https://github.com/daostack/nectardao#readme",
   "dependencies": {
-    "@daostack/migration": "0.0.1-rc.33-v1",
+    "@daostack/migration": "0.0.1-rc.34-v0",
     "dotenv": "^8.2.0",
+    "ganache-cli": "^6.7.0",
+    "truffle": "^5.1.2",
     "unix-timestamp": "^0.2.0",
     "web3": "1.0.0-beta.55"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0"
   }
 }

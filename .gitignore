@@ -1,3 +1,5 @@
 node_modules
 .env
 params.json
+build
+db

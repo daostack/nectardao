@@ -36,7 +36,7 @@ A rinkeby example for the DAO was deployed, with its Avatar on address [0x5B3dd2
 ### Contracts
  The dao contracts are based on [arc version 0.0.1-rc.33](https://github.com/daostack/arc/releases/tag/0.0.1-rc.33)
 #### Reputaiton bootstrap schemes
- [locking batches](https://github.com/daostack/arc/blob/0.0.1-rc.30/contracts/schemes/ContinuousLockingToken4Reputation.sol)
+ [locking batches](https://github.com/daostack/arc/blob/0.0.1-rc.30/contracts/schemes/ContinuousLocking4Reputation.sol)
  [nec snapshot](https://github.com/daostack/arc/blob/0.0.1-rc.30/contracts/schemes/ReputationFromToken.sol)
  - Will use (nectar rep allocation)[https://github.com/daostack/arc/blob/0.0.1-rc.30/contracts/test/NectarRepAllocation.sol] as a link contract to the nec token contract
 
@@ -49,3 +49,19 @@ A rinkeby example for the DAO was deployed, with its Avatar on address [0x5B3dd2
 3. Update `prepare` cmd at [package.json](https://github.com/daostack/nectardao/blob/master/package.json#L9)
 4. `npm i`
 5. `npm run migrate --  --private-key <PRIVATE_KEY> --provider https://mainnet.infura.io/v3/<infuraKey>`
+
+## Redemption Script
+
+In order to run the redeeming script, start by adding the following arguments to your `.env` file.
+
+```bash
+private_key=YOUR_PRIVATE_KEY
+ws_provider=YOUR_WEB_SOCKER_WEB3_PROVIDER
+from_block=THE_BLCOK_TO_START_SCANNING_FROM
+gas_price=GAS_PRICE_FOR_TXS
+NectarReputationRedeemerAddress=REDEEMING_CONTRACT_ADDRESS
+Auction4ReputationAddress=AUCTION_4_REPUTATION_CONTRACT_ADDRESS
+CLT4RAddress=CLT4REPUTATION_CONTRACT_ADDRESS
+```
+
+Then, run the command `npm run redeem` and wait for the script to execute all redeems.
