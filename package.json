@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "migrate_prod": "npm run prepare_prod && daostack-migrate dao --prev-migration node_modules/@daostack/migration/migration.json --gasPrice 20 --params ./params.json --custom-abis-location ./custom-abis --arc-version 0.0.1-rc.34",
-    "prepare": "node ./prepare.js ./parameters/deployment.json ./parameters/mainnet_params_25_11.json",
-    "migrate": "npm run prepare && daostack-migrate dao --prev-migration node_modules/@daostack/migration/migration.json --gasPrice 20 --params ./params.json --custom-abis-location ./custom-abis --arc-version 0.0.1-rc.34",
+    "prepare_test": "node ./prepare.js ./parameters/deployment.json ./parameters/mainnet_params_25_11.json",
+    "migrate_test": "npm run prepare_test && daostack-migrate dao --prev-migration node_modules/@daostack/migration/migration.json --gasPrice 20 --params ./params.json --custom-abis-location ./custom-abis --arc-version 0.0.1-rc.34",
     "redeem": "node -e 'require(\"./scripts/nectarRedeem.js\").startRedeem()'",
     "test": "jest",
     "build": "truffle compile",
@@ -29,6 +29,7 @@
   "homepage": "https://github.com/daostack/nectardao#readme",
   "dependencies": {
     "@daostack/migration": "0.0.1-rc.34-v0",
+    "bs58": "^4.0.1",
     "dotenv": "^8.2.0",
     "ganache-cli": "^6.7.0",
     "truffle": "^5.1.2",
