@@ -13,13 +13,8 @@ const web3 = new Web3(process.env.provider);
 const model_params = require(process.argv[2]);
 const params_json = require(process.argv[3]);
 
+var snapshotBlock = params_json.SNAPSHOT_BLOCK;
 
-web3.eth.getBlockNumber(function(error, snapshotBlock){
-  if (error)
-  {
-    console.log("error getting snapshotBlock",error);
-    process.exit(1);
-  }
   // IPFS hash for user agreement
   var agreementHash = '0x' + bs58.decode(params_json.AGREEMENT_HASH).slice(2).toString('hex');
   console.log("agreementHash",agreementHash);
@@ -123,7 +118,7 @@ for (let j = 0; j < model_params.StandAloneContracts.length; j++) {
 
    fs.writeFileSync('params.json', JSON.stringify(model_params), 'utf8');
 
-});
+
 
 console.log("prepare done - see params.json")
 
