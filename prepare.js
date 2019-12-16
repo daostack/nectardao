@@ -1,4 +1,5 @@
 'use strict';
+const bs58 = require('bs58');
 const fs = require("fs");
 const timestamp = require("unix-timestamp");
 const Web3 = require('web3')
@@ -12,12 +13,16 @@ const web3 = new Web3(process.env.provider);
 const model_params = require(process.argv[2]);
 const params_json = require(process.argv[3]);
 
+
 web3.eth.getBlockNumber(function(error, snapshotBlock){
   if (error)
   {
     console.log("error getting snapshotBlock",error);
     process.exit(1);
   }
+  // IPFS hash for user agreement
+  var agreementHash = '0x' + bs58.decode(params_json.AGREEMENT_HASH).slice(2).toString('hex');
+  console.log("agreementHash",agreementHash);
 
 for (let j = 0; j < model_params.CustomSchemes.length; j++) {
       if (model_params.CustomSchemes[j].params[2] === "ENS_PUBLIC_RESOLVER")
@@ -50,7 +55,7 @@ for (let j = 0; j < model_params.CustomSchemes.length; j++) {
         console.log("ContinuousLocking4Reputation error");
       }
       if (model_params.CustomSchemes[j].params[9] === "AGREEMENT_HASH") {
-          model_params.CustomSchemes[j].params[9] = params_json.AGREEMENT_HASH;
+          model_params.CustomSchemes[j].params[9] = agreementHash;
       }
       else
      {
@@ -78,7 +83,7 @@ for (let j = 0; j < model_params.CustomSchemes.length; j++) {
           console.log("Auction4Reputation error");
         }
         if (model_params.CustomSchemes[j].params[7] === "AGREEMENT_HASH") {
-            model_params.CustomSchemes[j].params[7] = params_json.AGREEMENT_HASH;
+            model_params.CustomSchemes[j].params[7] = agreementHash;
         } else
         {
           console.log("Auction4Reputation error");
@@ -86,7 +91,7 @@ for (let j = 0; j < model_params.CustomSchemes.length; j++) {
       }
       if (model_params.CustomSchemes[j].name === "ReputationFromToken") {
         if (model_params.CustomSchemes[j].params[2] === "AGREEMENT_HASH") {
-            model_params.CustomSchemes[j].params[2] = params_json.AGREEMENT_HASH;
+            model_params.CustomSchemes[j].params[2] = agreementHash;
         }
         else
        {
