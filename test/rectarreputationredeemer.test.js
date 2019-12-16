@@ -42,8 +42,8 @@ test('redeem nectar reputation', async () => {
       force: true,
       quiet: true,
       params,
-      arcVersion: '0.0.1-rc.33',
-    })).base['0.0.1-rc.33'];
+      arcVersion: '0.0.1-rc.34',
+    })).base['0.0.1-rc.34'];
 
     params.CustomSchemes[0].params[1] = (await web3.eth.getBlock("latest")).timestamp;
     params.CustomSchemes[0].params[3] = (await web3.eth.getBlock("latest")).timestamp + 7200;
@@ -59,8 +59,8 @@ test('redeem nectar reputation', async () => {
       force: true,
       quiet: true,
       params,
-      arcVersion: '0.0.1-rc.33',
-    })).dao['0.0.1-rc.33'];
+      arcVersion: '0.0.1-rc.34',
+    })).dao['0.0.1-rc.34'];
     migrationDAOResult.ContinuousLockingToken4Reputation = migrationDAOResult.Schemes[0].address
     migrationDAOResult.Auction4Reputation = migrationDAOResult.Schemes[1].address
 
