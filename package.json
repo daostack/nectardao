@@ -4,9 +4,9 @@
   "description": "nectar dao deployment repo",
   "main": "index.js",
   "scripts": {
-    "migrate_prod": "npm run prepare_prod && daostack-migrate dao --prev-migration node_modules/@daostack/migration/migration.json --gasPrice 20 --params ./params.json --custom-abis-location ./custom-abis --arc-version 0.0.1-rc.33",
+    "migrate_prod": "npm run prepare_prod && daostack-migrate dao --prev-migration node_modules/@daostack/migration/migration.json --gasPrice 20 --params ./params.json --custom-abis-location ./custom-abis --arc-version 0.0.1-rc.34",
     "prepare": "node ./prepare.js ./parameters/deployment.json ./parameters/mainnet_params_25_11.json",
-    "migrate": "npm run prepare && daostack-migrate dao --prev-migration node_modules/@daostack/migration/migration.json --gasPrice 20 --params ./params.json --custom-abis-location ./custom-abis --arc-version 0.0.1-rc.33",
+    "migrate": "npm run prepare && daostack-migrate dao --prev-migration node_modules/@daostack/migration/migration.json --gasPrice 20 --params ./params.json --custom-abis-location ./custom-abis --arc-version 0.0.1-rc.34",
     "redeem": "node -e 'require(\"./scripts/nectarRedeem.js\").startRedeem()'",
     "test": "jest",
     "build": "truffle compile",
