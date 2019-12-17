@@ -1,0 +1,102 @@
+agreementHash 0xd3e412f82586015eb5707cf5ec451fb0e207fc337041e2fa130a44c0b6271215
+prepare done - see params.json
+ℹ Network:      mainnet
+ℹ Account:      0x2BC1FeD4C65c9B1dc2BaAff2f3198AcC42C41778
+ℹ Balance:      0.554791668021608151ETH
+ℹ Gas price:    20GWei
+ℹ Found an existing previous migration file (/Users/benkaufman/Documents/Work/DAOstack/NectarDAO/nectardao/node_modules/@daostack/migration/migration.json)
+? About to migrate new DAO. Continue? Yes
+ℹ 0x147837010986cf4b85412f6b5b797440e8e2bf34db4018a19d96939dab2809b0 | 0.11288 ETH | Created new organization.
+ℹ 0xb6da45d48b2b55d94e2915f07d52120b659ddc5041ff76aa9b8049d8fd12e294 | 0.00536 ETH | GenesisProtocol parameters set. | Params Hash: 0xab9e0ccd452748b91442ea78d0e37e0984569f0d79e7ca7ce2d0b29c90e622b7
+Parameters:
+50,
+3888000,
+604800,
+86400,
+1200,
+86400,
+5000000000000000000000,
+4,
+150000000000000000000,
+10,
+1579867200,
+0x0000000000000000000000000000000000000000
+ℹ 0xff435ed336631eb4466d5a701eae3229f3e84f41140bd559d7f6bbf5483ff07e | 0.00127 ETH | Contribution Reward parameters set. | Params Hash: 0xc581f32abef43f20ce8934be71f9af5cd274636323c6c73e1b93efbf4e30d095
+Parameters:0xab9e0ccd452748b91442ea78d0e37e0984569f0d79e7ca7ce2d0b29c90e622b7,
+0x8A02316e1439128740E7Dde9315503330487bCC5
+ℹ 0xabefc883da4946eb876cc464976577f7bd01a1fc225820f3d9613612d65dbb95 | 0.00705 ETH | 0x2690339722EaA3fDF0901e6b7886F85CF7F2A620 => NectarRepAllocation
+ℹ 0x89bfc6f49af1085e33e7d4743364a9aac92cd3d408a0042c92715e147fc813c4 | 0.00312 ETH | NectarRepAllocation initialized.
+ℹ 0xa6f13da9e19dd687696c3da0827e6dc568741ada9b5426d3343d86ab9af45a39 | 0.03034 ETH | 0x46a95e30204799b6b3ea57EF5C3b3c453f6baF8a => RegistryLookup
+ℹ 0x67932123c52aef8583cf84091bd96b784dd1223dc6b062731513e5fa77b18ef4 | 0.00063 ETH | RegistryLookup called function transferOwnership.
+ℹ 0x05d660bfbe66f20b70e59ee30efd0b4202fb6d4ea03ca27220b727a33a05e88e | 0.02879 ETH | 0x1dfBb7D53A963F3bE085A54c4C3fd3DD4d520aF5 => GenericScheme
+ℹ 0x7808cb17f499ad7c413ac7c9f068f7b56fa4a6deb917e24d9a74e10070116b23 | 0.00213 ETH | GenericScheme initialized.
+ℹ 0x34eac682a18b57a8d8e2ead5ff266ac6eaa00ad5b90128678836556d4dc367b5 | 0.02879 ETH | 0x34632172D8D4b34E1b053bb3AC71053c618dcB17 => GenericScheme
+ℹ 0xef6592042c1da37f0eff8d50ce7f57da022d18c9e54d7520836735982a309b5a | 0.00213 ETH | GenericScheme initialized.
+ℹ 0x48a44934c890b3626dc736fd526136b9ca67e6fc73f7cf73a8977d8fa2c8fbbf | 0.02879 ETH | 0x910a1F7593DD273A2842b5187bC1c7e2a5b087a4 => GenericScheme
+✖ Transaction failed: Error: Transaction has been reverted by the EVM:
+{
+  "blockHash": "0x09e42cc4044386aaf475e29ce084dc64febe4326432cc878f0f302907f1c6bc5",
+  "blockNumber": 9120016,
+  "contractAddress": null,
+  "cumulativeGasUsed": 5963915,
+  "from": "0x2bc1fed4c65c9b1dc2baaff2f3198acc42c41778",
+  "gasUsed": 22680,
+  "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "status": false,
+  "to": "0x910a1f7593dd273a2842b5187bc1c7e2a5b087a4",
+  "transactionHash": "0xc5cb5f1031ca39020dfbf9d130794fc0a2232f85f704c534abb9069eb92d535a",
+  "transactionIndex": 79,
+  "events": {}
+}
+? Would you like to retry sending the transaction? Yes
+ℹ 0xbaf41f161d245e3a3092195f81dbaa69f58a7aacabc03d668ea6b22710d3b8e1 | 0.00213 ETH | GenericScheme initialized.
+ℹ 0x9fa32a1a50df77dc875c377d6a02ab78ef91bbcaa396aa4396c99e90e5b24a33 | 0.03139 ETH | 0xd56B323dce56e5b9b499f3e1F6A6Ccc433472db3 => ContinuousLocking4Reputation
+ℹ 0x72b713787334df96969183477e2f6fbc4228659103445c156ac2b98b2c732dda | 0.00496 ETH | ContinuousLocking4Reputation initialized.
+ℹ 0xbe6da609434b402a3243bb7fb887d9adb6c2b1612b110e02a30454dbdc8cb39a | 0.02027 ETH | 0xb78DF7cFD07849B19ec083D76B2DF6Fb5d1CbC3b => Auction4Reputation
+ℹ 0x427ef6a34d0cb86e5d186f883a37b823f743689a0b0babd29676ddfb411bd4f4 | 0.00497 ETH | Auction4Reputation initialized.
+ℹ 0x9adcdb26ff2553a225f75a29ec212d6e9b7575f03175e4b499f13a63496001c1 | 0.01432 ETH | 0x32200646243cd4181abD8abbAd8f46B7b16a8aF0 => ReputationFromToken
+ℹ 0x97d0af95eeb34126c4c20d0176db94cd4274cc322179952e35fefa5b5026e86a | 0.00176 ETH | ReputationFromToken initialized.
+ℹ 0x0f9fa790a9e79387f632525c7e43bb8db11b44f9d558832759bcea0cafb9da49 | 0.00678 ETH | DAO schemes set.
+{
+  "name": "necDAO",
+  "Avatar": "0x2fF98aa3afb76F0a198C3cfDf71beA53C8bd990a",
+  "DAOToken": "0x9B924e51408BeBd1cd828Bbedd84428e6E1af61D",
+  "Reputation": "0x9a566bC44FEa5548BB9dCeeE619e03382C9950dC",
+  "Controller": "0xa0A9D4b95a0dC6855999df698eCfb48a57BF8115",
+  "Schemes": [
+    {
+      "name": "GenericScheme",
+      "alias": "GenericSchemeENSPublicProvider",
+      "address": "0x1dfBb7D53A963F3bE085A54c4C3fd3DD4d520aF5"
+    },
+    {
+      "name": "GenericScheme",
+      "alias": "GenericSchemeENSRegistry",
+      "address": "0x34632172D8D4b34E1b053bb3AC71053c618dcB17"
+    },
+    {
+      "name": "GenericScheme",
+      "alias": "GenericSchemeRegistryLookup",
+      "address": "0x910a1F7593DD273A2842b5187bC1c7e2a5b087a4"
+    },
+    {
+      "name": "ContinuousLocking4Reputation",
+      "alias": "InfiniteReputation4Token",
+      "address": "0xd56B323dce56e5b9b499f3e1F6A6Ccc433472db3"
+    },
+    {
+      "name": "Auction4Reputation",
+      "alias": "GENAuction",
+      "address": "0xb78DF7cFD07849B19ec083D76B2DF6Fb5d1CbC3b"
+    },
+    {
+      "name": "ReputationFromToken",
+      "alias": "ReputationFromToken",
+      "address": "0x32200646243cd4181abD8abbAd8f46B7b16a8aF0"
+    }
+  ],
+  "arcVersion": "0.0.1-rc.34"
+}
+✔ DAO Migration has Finished Successfully!
+ℹ Finished in 10 minutes and costed 0.33827964ETH
+✔ Wrote results to /Users/benkaufman/Documents/Work/DAOstack/NectarDAO/nectardao/node_modules/@daostack/migration/migration.json.
