@@ -142,7 +142,7 @@
          "queuedVoteRequiredPercentage":50,
          "preBoostedVotePeriodLimit":86400,
          "proposingRepReward":5000,
-         "quietEndingPeriod":604800,
+         "quietEndingPeriod":86400,
          "thresholdConst":1200,
          "voteOnBehalf":"0x0000000000000000000000000000000000000000",
          "votersReputationLossRatio":4,
