@@ -41,9 +41,7 @@ async function startAudit() {
     if (repRewardConstAJS.shrn(REAL_FBITS).toString() !== await web3.utils.toWei("85000" )) {
       console.log(" continuousLockingToken4Reputation (repRewardConstA.toNumber() !== web3.utils.toWei(10000 )) ",await web3.utils.toWei("100000" ));
     }
-    // function fraction(uint216 numerator, uint216 denominator) internal pure returns (uint256) {
-    //         return div(uint256(numerator) * REAL_ONE, uint256(denominator) * REAL_ONE);
-    //     }
+
     var repRewardConstB = await continuousLockingToken4Reputation.methods.repRewardConstB().call();
     var repRewardConstBJS = new BNJS(repRewardConstB.toString());
     var realOne = (new BNJS('1')).shln(REAL_FBITS);
@@ -72,9 +70,9 @@ async function startAudit() {
     let nectarRepAllocation = new web3.eth.Contract(NectarRepAllocation, tokenContract);
 
     var blockReference = await nectarRepAllocation.methods.blockReference().call();
-    if (blockReference.toNumber() !== params_json.SNAPSHOT_BLOCK) {
-      console.log("(blockReference.toNumber() !== params_json.SNAPSHOT_BLOCK)");
-    }
+    // if (blockReference.toNumber() !== params_json.SNAPSHOT_BLOCK) {
+    //   console.log("(blockReference.toNumber() !== params_json.SNAPSHOT_BLOCK)");
+    // }
 
     var reputationReward = await nectarRepAllocation.methods.reputationReward().call();
     if (reputationReward.toString() !== await web3.utils.toWei("100000" )) {
@@ -83,8 +81,6 @@ async function startAudit() {
     }
     console.log("blockReference",blockReference.toNumber());
 }
-
-
 
 module.exports = {
     startAudit
