@@ -17,7 +17,7 @@
       {
          "name": "NectarRepAllocation",
          "params": [
-            "100000000000000000000000",
+            "SNAPSHOT_REP_ALLOCATION",
             "BOOTSTRAP_START",
             "BOOTSTRAP_END",
             "SNAPSHOT_BLOCK",
@@ -87,7 +87,7 @@
        "schemeName":"ContinuousLocking4Reputation",
        "isUniversal":false,
        "params":[
-         "850000000000000000000000",
+         "CONTINUES_LOCKING_REP_ALLOCATION",
          "BOOTSTRAP_START",
          2592000,
          "BOOTSTRAP_END",
@@ -107,10 +107,10 @@
        "schemeName":"Auction4Reputation",
        "isUniversal":false,
        "params":[
-         "50000000000000000000000",
+         "GEN_AUCTION_REP_ALLOCATION",
          "BOOTSTRAP_START",
          259200,
-         10,
+         "NUMBER_OF_AUCTIONS",
          "BOOTSTRAP_END",
          "GEN",
          "AvatarAddress",

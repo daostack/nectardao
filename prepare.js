@@ -64,6 +64,19 @@ for (let j = 0; j < model_params.CustomSchemes.length; j++) {
      {
        console.log("ContinuousLocking4Reputation error");
      }
+
+     if (model_params.CustomSchemes[j].params[0] === "CONTINUES_LOCKING_REP_ALLOCATION") {
+         model_params.CustomSchemes[j].params[0] = web3.utils.toWei(params_json.CONTINUES_LOCKING_REP_ALLOCATION.toString());
+         model_params.CustomSchemes[j].params[5] = web3.utils.toWei(params_json.CONTINUES_LOCKING_R0.toString());
+         console.log("CONTINUES_LOCKING_REP_ALLOCATION",model_params.CustomSchemes[j].params[0])
+         console.log("CONTINUES_LOCKING_R0",model_params.CustomSchemes[j].params[5])
+
+
+     }
+     else
+    {
+      console.log("ContinuousLocking4Reputation error");
+    }
      model_params.CustomSchemes[j].params[3] = timestamp.fromDate(params_json.BOOTSTRAP_END);
     }
       if (model_params.CustomSchemes[j].name === "Auction4Reputation") {
@@ -87,6 +100,17 @@ for (let j = 0; j < model_params.CustomSchemes.length; j++) {
         }
         if (model_params.CustomSchemes[j].params[7] === "AGREEMENT_HASH") {
             model_params.CustomSchemes[j].params[7] = agreementHash;
+        } else
+        {
+          console.log("Auction4Reputation error");
+        }
+
+        if (model_params.CustomSchemes[j].params[0] === "GEN_AUCTION_REP_ALLOCATION") {
+            model_params.CustomSchemes[j].params[0] =  web3.utils.toWei(params_json.GEN_AUCTION_REP_ALLOCATION.toString());
+            model_params.CustomSchemes[j].params[3] =  params_json.NUMBER_OF_AUCTIONS;
+
+            console.log("GEN_AUCTION_REP_ALLOCATION" , model_params.CustomSchemes[j].params[0]);
+            console.log("NUMBER_OF_AUCTIONS" , model_params.CustomSchemes[j].params[3]);
         } else
         {
           console.log("Auction4Reputation error");
@@ -117,6 +141,11 @@ for (let j = 0; j < model_params.StandAloneContracts.length; j++) {
         }
         if (model_params.StandAloneContracts[j].params[4] === "NEC") {
            model_params.StandAloneContracts[j].params[4] = params_json.NEC;
+        }
+
+        if (model_params.StandAloneContracts[j].params[0] === "SNAPSHOT_REP_ALLOCATION") {
+           model_params.StandAloneContracts[j].params[0] = web3.utils.toWei(params_json.SNAPSHOT_REP_ALLOCATION.toString());
+           console.log("SNAPSHOT_REP_ALLOCATION",model_params.StandAloneContracts[j].params[0])
         }
       }
 }
