@@ -108,7 +108,7 @@ async function startRedeem(
 
 async function getRedeemsForCLT4R() {
     let redeems = []
-    const ContinuousLockingToken4Reputation = require("@daostack/migration/contracts/0.0.1-rc.33/ContinuousLocking4Reputation.json").abi;
+    const ContinuousLockingToken4Reputation = require("@daostack/migration/contracts/0.0.1-rc.34/ContinuousLocking4Reputation.json").abi;
     let continuousLockingToken4Reputation = new web3.eth.Contract(ContinuousLockingToken4Reputation, CLT4RAddress);
     let events = await continuousLockingToken4Reputation.getPastEvents('LockToken', { fromBlock, toBlock: 'latest' })
     for (let event of events) {
@@ -141,7 +141,7 @@ async function getRedeemsForCLT4R() {
 async function getRedeemsForAuction4R() {
     let redeems = []
     let auctions = []
-    const Auction4Reputation = require("@daostack/migration/contracts/0.0.1-rc.33/Auction4Reputation.json").abi;
+    const Auction4Reputation = require("@daostack/migration/contracts/0.0.1-rc.34/Auction4Reputation.json").abi;
     let auction4Reputation = new web3.eth.Contract(Auction4Reputation, Auction4ReputationAddress);
     let events = await auction4Reputation.getPastEvents('Bid', { fromBlock, toBlock: 'latest' })
     for (let event of events) {
