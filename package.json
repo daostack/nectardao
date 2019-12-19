@@ -10,6 +10,7 @@
     "redeem": "node -e 'require(\"./scripts/nectarRedeem.js\").startRedeem()'",
     "test": "jest",
     "build": "truffle compile",
+    "audit": "node -e 'require(\"./audit.js\").startAudit()'",
     "prepare_prod": "node ./prepare.js ./parameters/deployment_prod.json ./parameters/production_mainnet_params.json"
   },
   "repository": {
