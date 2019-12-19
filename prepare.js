@@ -14,12 +14,13 @@ const model_params = require(process.argv[2]);
 const params_json = require(process.argv[3]);
 
 //var snapshotBlock = params_json.SNAPSHOT_BLOCK;
-web3.eth.getBlockNumber(function(error, snapshotBlock){
-  if (error)
-  {
-    console.log("error getting snapshotBlock",error);
-    process.exit(1);
-  }
+// web3.eth.getBlockNumber(function(error, snapshotBlock){
+//   if (error)
+//   {
+//     console.log("error getting snapshotBlock",error);
+//     process.exit(1);
+//   }
+  var snapshotBlock = params_json.SNAPSHOT_BLOCK;
   console.log("snapshotBlock",snapshotBlock);
 
 
@@ -155,7 +156,7 @@ for (let j = 0; j < model_params.StandAloneContracts.length; j++) {
    }
 
    fs.writeFileSync('params.json', JSON.stringify(model_params), 'utf8');
- });
+ //});
 
 
 console.log("prepare done - see params.json")
