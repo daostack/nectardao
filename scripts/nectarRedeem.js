@@ -55,7 +55,7 @@ async function startRedeem(
         await tx.send({
             from: web3.eth.defaultAccount,
             gas,
-            _gasPrice,
+            gasPrice: _gasPrice,
         }).on("confirmation", function(_, receipt) {
             console.log(
                 `Transaction ${receipt.transactionHash} successfully redeemed ${clt4rRedeemsBatch.length} CLT4Reputation locks.`
@@ -65,6 +65,7 @@ async function startRedeem(
 
         redeemsCount -= redeemsBatchSize
         redeemsCounter++
+        console.log(`Redeems Counter: ${redeemsCounter}`);
     }
 
     redeemsCount = auction4rRedeems.length
@@ -93,7 +94,7 @@ async function startRedeem(
         await tx.send({
             from: web3.eth.defaultAccount,
             gas,
-            _gasPrice,
+            gasPrice: _gasPrice,
         }).on("confirmation", function(_, receipt) {
             console.log(
                 `Transaction ${receipt.transactionHash} successfully redeemed ${auction4rRedeemsBatch.length} AuctionReputation bids.`
@@ -103,6 +104,7 @@ async function startRedeem(
 
         redeemsCount -= redeemsBatchSize
         redeemsCounter++
+        console.log(`Redeems Counter: ${redeemsCounter}`);
     }
 }
 
