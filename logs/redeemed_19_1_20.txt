@@ -1,553 +1,554 @@
+
 Contineous Locking Redeemed
 Contineous Locking Redeemed counter 0
 lockingId 1
-beneficiary undefined
+beneficiary 0xF16294a979a027F297DAcE2F618Cb57bc4Bf5d16
 amount 0.001522014060809328
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 1
 lockingId 2
-beneficiary undefined
+beneficiary 0xDB40aE9e2CBaF17bBE68d2aE221Fa499f8E42C85
 amount 0.002926950116941016
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 2
 lockingId 3
-beneficiary undefined
+beneficiary 0xDB40aE9e2CBaF17bBE68d2aE221Fa499f8E42C85
 amount 0.002926950116941016
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 3
 lockingId 4
-beneficiary undefined
+beneficiary 0x96B795b19eA44a018E73Ac0a00D2ECD23B11267A
 amount 0.008780850350823048
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 4
 lockingId 5
-beneficiary undefined
+beneficiary 0xfC898B18a70cE49579f8D79a32e29928C15b4Bc8
 amount 117.078004677640652926
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 5
 lockingId 6
-beneficiary undefined
+beneficiary 0x7274d07b7C7a7F8b3E046A030A5e83e595BADf94
 amount 0.058539002338820326
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 6
 lockingId 7
-beneficiary undefined
+beneficiary 0x719BD9F4FCB2C7fE0Ef994B2A9E1D84Fd35B3619
 amount 0.102443254092935571
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 7
 lockingId 8
-beneficiary undefined
+beneficiary 0xA5aaCd9faAb88D345DEb55036257913202F40c05
 amount 6.070201847523973752
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 8
 lockingId 9
-beneficiary undefined
+beneficiary 0x010afb8548a5D1a3a3D62f58CA0a5A1329974206
 amount 14.788926434468351231
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 9
 lockingId 10
-beneficiary undefined
+beneficiary 0xaC201CAB893873A2aE2c519f65d80acB87Ea8dbe
 amount 0.035123401403292195
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 10
 lockingId 11
-beneficiary undefined
+beneficiary 0xADEEb9d09B8Bcee10943198FB6F6a4229bAB3675
 amount 4.534110076441266945
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 11
 lockingId 12
-beneficiary undefined
+beneficiary 0x5e7B645d5Bf86750CB1913122ba8A8545e2A9FD1
 amount 44.079868761131705826
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 12
 lockingId 13
-beneficiary undefined
+beneficiary 0x55a3df57B7AAEC16a162fD5316f35bEC082821CF
 amount 543.947336682435414511
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 13
 lockingId 14
-beneficiary undefined
+beneficiary 0x315891fd02347bbb90E53A39167d79EfD719Dd50
 amount 0.292695011694101632
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 14
 lockingId 15
-beneficiary undefined
+beneficiary 0x315891fd02347bbb90E53A39167d79EfD719Dd50
 amount 34.014472498621698749
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 15
 lockingId 16
-beneficiary undefined
+beneficiary 0x764f4909251F81976A0A2DCeBcE95333e4C27517
 amount 86.775628130469224453
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 16
 lockingId 17
-beneficiary undefined
+beneficiary 0xE8f090945bd05137cd59b956Dfea750d8bfbee59
 amount 2341.560093552813058522
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 17
 lockingId 18
-beneficiary undefined
+beneficiary 0xb6c02081e95b84c5afA75ef9595f84a9ed43Ecd4
 amount 0.029269501169410163
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 18
 lockingId 19
-beneficiary undefined
+beneficiary 0x5cdfdbC34E0110dd55e57973F18C2E53Fe6d2CDC
 amount 3.152905795523868193
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 19
 lockingId 20
-beneficiary undefined
+beneficiary 0x9c2DfD5acBCF22CB9A82EAAEe95824Faf5E1e035
 amount 12.084997895090155932
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 20
 lockingId 21
-beneficiary undefined
+beneficiary 0xb0e83C2D71A991017e0116d58c5765Abc57384af
 amount 7.021167940518109955
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 21
 lockingId 22
-beneficiary undefined
+beneficiary 0x7d98EAC9Da75948D56869fe643B045fcA105e70e
 amount 0.044326293345327655
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 22
 lockingId 23
-beneficiary undefined
+beneficiary 0xC0B53221A7dbcbcE68441C26ea4DA73266D6bc20
 amount 0.878085035082304896
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 23
 lockingId 24
-beneficiary undefined
+beneficiary 0xC0B53221A7dbcbcE68441C26ea4DA73266D6bc20
 amount 0.878085035082304896
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 24
 lockingId 25
-beneficiary undefined
+beneficiary 0x7d98EAC9Da75948D56869fe643B045fcA105e70e
 amount 0.292695011694101632
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 25
 lockingId 26
-beneficiary undefined
+beneficiary 0x1e43A3B1c1e03eA8590e089d83859146D2bEF829
 amount 0.680192114127460926
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 26
 lockingId 27
-beneficiary undefined
+beneficiary 0x74aea9791a0074Fa6A239D54b3Be22F50Ae83968
 amount 87.483051241607630983
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 27
 lockingId 28
-beneficiary undefined
+beneficiary 0x718FdF375E1930Ba386852E35F5bAFC31df3AE66
 amount 0.035123401403292195
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 28
 lockingId 29
-beneficiary undefined
+beneficiary 0x5A384227B65FA093DEC03Ec34e111Db80A040615
 amount 0.875889822494599134
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 29
 lockingId 30
-beneficiary undefined
+beneficiary 0x34f1e87e890b5683EF7b011b16055113c7194C35
 amount 3494.778439627573489844
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 30
 lockingId 31
-beneficiary undefined
+beneficiary 0x3295ddC1303ba1C6f62A4d45fd66Cc57ae913cB8
 amount 653.201896392504424907
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 31
 lockingId 32
-beneficiary undefined
+beneficiary 0x42126a182fF6AC8518d4d6807273780953286b9E
 amount 1.055202823015578772
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 32
 lockingId 33
-beneficiary undefined
+beneficiary 0x4f78fD6E960494d34bae429eDE20da77C1FD7DCA
 amount 11.941956477119346598
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 33
 lockingId 34
-beneficiary undefined
+beneficiary 0xDB40aE9e2CBaF17bBE68d2aE221Fa499f8E42C85
 amount 3.724544023807443271
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 34
 lockingId 35
-beneficiary undefined
+beneficiary 0xD2Af803ad747ea12Acf5Ae468056703aE48785b5
 amount 2142.176886793505405128
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 35
 lockingId 36
-beneficiary undefined
+beneficiary 0xe7584428f8fCf5b84A47c10198bfE3F1cE2242dD
 amount 48.371456977689377766
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 36
 lockingId 37
-beneficiary undefined
+beneficiary 0x551225dD1CFf59F6501109cCd6Bb08B465e71aEa
 amount 76.770333322475295363
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 37
 lockingId 38
-beneficiary undefined
+beneficiary 0xC984bf0665eeee8d57B32eb3F5f073b37B1b73da
 amount 330.54352073427059203
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 38
 lockingId 39
-beneficiary undefined
+beneficiary 0xB59E31B96FCAD67FC3b0A0847968d735c064d981
 amount 41.133176365651922348
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 39
 lockingId 40
-beneficiary undefined
+beneficiary 0xdFD622d69Fa373AF0E15E3C834a6De8d9E215405
 amount 90.520036497277701945
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 40
 lockingId 41
-beneficiary undefined
+beneficiary 0xD402d3e23322ee3e0a767D04EbfBAA22E9DF1AaD
 amount 2422.051221768691007409
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 41
 lockingId 42
-beneficiary undefined
+beneficiary 0x1441c05f1c28b2111A454eB6060acE8BEc7C95c3
 amount 1511.184345376646727643
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 42
 lockingId 43
-beneficiary undefined
+beneficiary 0x673d17B0208924eCBdb14Cc1f0550CF950Dfc1b9
 amount 29.269501169410163231
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 43
 lockingId 44
-beneficiary undefined
+beneficiary 0xeC64642B44B532C32A0b61966e237C4040977F11
 amount 632.005391957636295257
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 44
 lockingId 45
-beneficiary undefined
+beneficiary 0x458892AE9aAEd5d0f2Df23Ee5858eb1A494BbD8b
 amount 282.829035272029327024
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 45
 lockingId 46
-beneficiary undefined
+beneficiary 0x41D0DEa35a11396e03781a5F0ca39Ebba55d638B
 amount 972.624528696459964238
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 46
 lockingId 47
-beneficiary undefined
+beneficiary 0xC0afeE1E277688aCa613EFb0e7E34ba19E943e58
 amount 552.608182078463881811
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 47
 lockingId 48
-beneficiary undefined
+beneficiary 0x2A595AD9d55a4752453bEaf69452682B2284625E
 amount 1530.502216148457435376
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 48
 lockingId 49
-beneficiary undefined
+beneficiary 0x7fFA4bb26c798166Ba3d1550993A89f36fb3bfbC
 amount 41.501587771836136049
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 49
 lockingId 50
-beneficiary undefined
+beneficiary 0x7De082e63E040fB3CAD81bf729F40ba762E87F0b
 amount 5.853900233882032646
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 50
 lockingId 51
-beneficiary undefined
+beneficiary 0xD4990621afBa2cE08e425fc5aAa5410229C69F4F
 amount 2260.483575313546906371
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 51
 lockingId 52
-beneficiary undefined
+beneficiary 0x00A3093AfcFF1eb857dA3857Eb860B11396e8743
 amount 1556.844650122921904644
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 52
 lockingId 53
-beneficiary undefined
+beneficiary 0xF66D9afdCae4C055659F53b97898C883015ec5Ff
 amount 259.94886600451340366
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 53
 lockingId 54
-beneficiary undefined
+beneficiary 0x44b22FffaE3badDbd4b824777BA8c919e51D0c5c
 amount 710.929284733398176953
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 54
 lockingId 55
-beneficiary undefined
+beneficiary 0x0eC4ee96B88e3734DB5e249a6784197aC1b54b3B
 amount 45.367726812585753008
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 55
 lockingId 56
-beneficiary undefined
+beneficiary 0xB87dF77Cae803fCa8C416c3d28bF67E2D15e1817
 amount 1430.400522149074677124
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 56
 lockingId 57
-beneficiary undefined
+beneficiary 0x8c00C0cE84fED4c01c745d569DE371989f42bae7
 amount 1163.461676321014228507
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 57
 lockingId 58
-beneficiary undefined
+beneficiary 0xcB884eB6112d3359295Db2d0C4563b2E3765Fe9b
 amount 325.119648011569533502
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 58
 lockingId 59
-beneficiary undefined
+beneficiary 0x428259be41B163aa3A2b2eC58cAe20C2Bf1e60d6
 amount 17561.691781004609530767
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 59
 lockingId 60
-beneficiary undefined
+beneficiary 0x6F1a6F8d282AFeD9018405fa6359b5870112762f
 amount 845.563106942949876376
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 60
 lockingId 61
-beneficiary undefined
+beneficiary 0x1c052433e70e6717fa35Ce2e55d7616527840d5a
 amount 1061.896514580536254446
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 61
 lockingId 62
-beneficiary undefined
+beneficiary 0x0fDA4Ac09a12C10FAe30E429F4D6b47C9A83c87e
 amount 529.797011756796615163
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 62
 lockingId 63
-beneficiary undefined
+beneficiary 0x39e1712925380bd5204d260E3a1752db199A360C
 amount 503.728115125548909214
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 63
 lockingId 64
-beneficiary undefined
+beneficiary 0x7adC01bC066A03CA366Eb7EA93eA9cFC0E2F1321
 amount 878.156335587153580103
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 64
 lockingId 65
-beneficiary undefined
+beneficiary 0xe0fE5b38C52A83308bEC9242d768441025DBB4D8
 amount 14049.360561316878351135
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 65
 lockingId 66
-beneficiary undefined
+beneficiary 0xABBF8Cf19f6D1639b6E73b8726d3f67a4F7A4B72
 amount 0.146347505847050816
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 66
 lockingId 67
-beneficiary undefined
+beneficiary 0xbA93Ea83366Ea8293c520a812BB16fEb90C612bD
 amount 8.609096917960950131
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 67
 lockingId 68
-beneficiary undefined
+beneficiary 0xABBF8Cf19f6D1639b6E73b8726d3f67a4F7A4B72
 amount 0.702468028065843917
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 68
 lockingId 69
-beneficiary undefined
+beneficiary 0xCDB9a849892e8E7e432349959fdaDc37AFE91347
 amount 171.279530368664917889
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 69
 lockingId 70
-beneficiary undefined
+beneficiary 0x8B94f9c38a6cacC49Cbd48Ad867C0A9c2f89EB11
 amount 585.39002338820326463
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 70
 lockingId 71
-beneficiary undefined
+beneficiary 0x8B94f9c38a6cacC49Cbd48Ad867C0A9c2f89EB11
 amount 585.39002338820326463
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 71
 lockingId 72
-beneficiary undefined
+beneficiary 0x3f9F698f0707c84037b2051C436f1fbE3bA08d50
 amount 10.624828924495889253
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 72
 lockingId 73
-beneficiary undefined
+beneficiary 0x8bCE57b7B84218397FFB6ceFaE99F4792Ee8161d
 amount 6.784095518066308621
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 73
 lockingId 74
-beneficiary undefined
+beneficiary 0x991A48280DD3db9aa2f9A765FA18e412449de8f3
 amount 4.742639717733621683
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 74
 lockingId 75
-beneficiary undefined
+beneficiary 0x3DF98E08FB0b10452cB16fbD57755365F301C28C
 amount 2.669181431969923573
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 75
 lockingId 76
-beneficiary undefined
+beneficiary 0xABBF8Cf19f6D1639b6E73b8726d3f67a4F7A4B72
 amount 0.643929025727023591
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 76
 lockingId 77
-beneficiary undefined
+beneficiary 0xABBF8Cf19f6D1639b6E73b8726d3f67a4F7A4B72
 amount 0.585390023388203264
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 77
 lockingId 78
-beneficiary undefined
+beneficiary 0xABBF8Cf19f6D1639b6E73b8726d3f67a4F7A4B72
 amount 0.117078004677640652
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 78
 lockingId 79
-beneficiary undefined
+beneficiary 0xABBF8Cf19f6D1639b6E73b8726d3f67a4F7A4B72
 amount 0.175617007016460979
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 79
 lockingId 80
-beneficiary undefined
+beneficiary 0xABBF8Cf19f6D1639b6E73b8726d3f67a4F7A4B72
 amount 0.234156009355281305
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 80
 lockingId 81
-beneficiary undefined
+beneficiary 0xABBF8Cf19f6D1639b6E73b8726d3f67a4F7A4B72
 amount 0.292695011694101632
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 81
 lockingId 82
-beneficiary undefined
+beneficiary 0xABBF8Cf19f6D1639b6E73b8726d3f67a4F7A4B72
 amount 0.351234014032921958
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 82
 lockingId 83
-beneficiary undefined
+beneficiary 0xABBF8Cf19f6D1639b6E73b8726d3f67a4F7A4B72
 amount 0.409773016371742285
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 83
 lockingId 84
-beneficiary undefined
+beneficiary 0xABBF8Cf19f6D1639b6E73b8726d3f67a4F7A4B72
 amount 0.468312018710562611
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 84
 lockingId 85
-beneficiary undefined
+beneficiary 0xABBF8Cf19f6D1639b6E73b8726d3f67a4F7A4B72
 amount 0.526851021049382938
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 85
 lockingId 86
-beneficiary undefined
+beneficiary 0xABBF8Cf19f6D1639b6E73b8726d3f67a4F7A4B72
 amount 0.585390023388203264
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 86
 lockingId 87
-beneficiary undefined
+beneficiary 0xABBF8Cf19f6D1639b6E73b8726d3f67a4F7A4B72
 amount 1.170780046776406529
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 87
 lockingId 88
-beneficiary undefined
+beneficiary 0xABBF8Cf19f6D1639b6E73b8726d3f67a4F7A4B72
 amount 1.756170070164609793
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 88
 lockingId 89
-beneficiary undefined
+beneficiary 0x81917405bB49AAF75c30169b6b6900fc9907E727
 amount 11707.800467764065292612
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 89
 lockingId 90
-beneficiary undefined
+beneficiary 0x7De082e63E040fB3CAD81bf729F40ba762E87F0b
 amount 7.317375292352540807
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 90
 lockingId 91
-beneficiary undefined
+beneficiary 0x34f1e87e890b5683EF7b011b16055113c7194C35
 amount 3512.340140329219587783
 batchIndex 0
 ---------------------------------------
 Contineous Locking Redeemed counter 91
 lockingId 92
-beneficiary undefined
+beneficiary 0x98eF00F6850855d9606cf1058EDfD4a1a8A4F08E
 amount 7024.680280658439175567
 batchIndex 0
 ---------------------------------------
@@ -801,3 +802,4 @@ gen auction redeem counter 49
 _auctionId 9
 beneficiary 0x87E6888935180a9b27A9b48B75C9b779bfEC1f76
 amount 2691.517379794632426095
+---------------------------
