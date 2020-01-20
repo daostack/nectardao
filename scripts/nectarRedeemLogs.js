@@ -5,17 +5,10 @@ let web3, fromBlock, CLT4RAddress, Auction4ReputationAddress;
 const NectarReputationRedeemer0x = "0x685e1594EfF5dCa50dd3cd1fC58f1E38432343FB"
 const Auction4Reputation0x = "0xACfbe2dFb0745042f01d95A529a9735Aba8FE746"
 const CLT4RAddress0x = "0xDa490e9acc7f7418293CFeA1FF2085c60d573626"
-kovan_provider="https://kovan.infura.io/v3/7a7951ae500944c2803097544a55655a"
-rinkeby_provider="https://rinkeby.infura.io/v3/7a7951ae500944c2803097544a55655a"
-mainnet_provider="https://mainnet.infura.io/v3/7a7951ae500944c2803097544a55655a"
-xdai_provider="https://poa.api.nodesmith.io/v1/dai/jsonrpc?apiKey=e255bf2f7a494b19aeca36dd7d9df7b6"
-mainnet_private_key="0xDA4FDAC6F5FFCFBED946B0EBD28AE05F13F8B39FF7CDB892F529AE0C12C53940"
-rinkeby_private_key="0xDA4FDAC6F5FFCFBED946B0EBD28AE05F13F8B39FF7CDB892F529AE0C12C53940"
-kovan_private_key="0xDA4FDAC6F5FFCFBED946B0EBD28AE05F13F8B39FF7CDB892F529AE0C12C53940"
-xdai_private_key="0xDA4FDAC6F5FFCFBED946B0EBD28AE05F13F8B39FF7CDB892F529AE0C12C53940"
+
 
 async function startRedeem(
-    _web3Provider="https://mainnet.infura.io/v3/7a7951ae500944c2803097544a55655a",
+    _web3Provider="https://mainnet.infura.io/v3/xxx",
     _fromBlock=9110847,
     _nectarRedeemerAddress=NectarReputationRedeemer0x,
     _CLT4RAddress=CLT4RAddress0x,
