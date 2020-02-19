@@ -7,3 +7,6 @@ Redeems Counter: 1
 GAS 3927856
 Transaction 0xcbf43646d8e85b06da5636a4be64a6bc6c4c263c9fb87043117d0293018d7e75 successfully redeemed 50 AuctionReputation bids.
 Redeems Counter: 1
+GAS 6240458
+Transaction 0x318ef185ff077e980d0b6f8695e504ba23b65d715a4327b153a5605cbee8ba9b successfully redeemed 65 CLT4Reputation locks.
+Redeems Counter: 1
