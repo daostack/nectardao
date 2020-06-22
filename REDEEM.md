@@ -4,7 +4,7 @@ Go to redeem-logs.txt, take the last transaction hash there, and check the block
 
 Increment this block hash by 1 (ie. 9703514 -> 9703515) and paste it in the `scripts/nectarRedeemLogs.js` file at line 12 as the `_fromBlock=` value.
 
-Run `npm run redeem`, wait a few minutes (probably 5 should be good, possibly less), then stop the script take the output of that and paste it at the end of the `logs/redeem-logs.txt` file
+Run `npm run redeem`, wait a few minutes (probably 15 should be good, possibly less), then stop the script take the output of that and paste it at the end of the `logs/redeem-logs.txt` file
 (ie. ```
 GAS 6555678
 Transaction 0x7b4f2d11d6486fd881772f1a885e8b13f006b855d59874416f42c41de1055eda successfully redeemed 66 CLT4Reputation locks.
