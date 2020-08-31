@@ -9,7 +9,7 @@ const CLT4RAddress0x = "0xDa490e9acc7f7418293CFeA1FF2085c60d573626"
 
 async function startRedeem(
     _web3Provider="https://mainnet.infura.io/v3/e0cdf3bfda9b468fa908aa6ab03d5ba2",
-    _fromBlock=10314021,
+    _fromBlock=10503447,
     _nectarRedeemerAddress=NectarReputationRedeemer0x,
     _CLT4RAddress=CLT4RAddress0x,
     _Auction4ReputationAddress=Auction4Reputation0x
