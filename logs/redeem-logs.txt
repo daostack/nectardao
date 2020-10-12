@@ -28,3 +28,6 @@ Redeems Counter: 1
 GAS 8988808
 Transaction 0x654449913414ff6253e18105e9bc632e55ebb187ee92f10845cdf0845e97b676 successfully redeemed 90 CLT4Reputation locks.
 Redeems Counter: 1
+GAS 7715154
+Transaction 0xa921a560066e43cbfe2270665edb18d96f3ad14e6f13a3cff4a6619687a63447 successfully redeemed 76 CLT4Reputation locks.
+Redeems Counter: 1
