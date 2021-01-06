@@ -13,3 +13,30 @@ Redeems Counter: 1
 GAS 6856879
 Transaction 0x7cb7ba9383e65c45b4d2aa19ac0e2ad81619206cc0026d086953d95f315ac5c8 successfully redeemed 70 CLT4Reputation locks.
 Redeems Counter: 1
+GAS 6555678
+Transaction 0x7b4f2d11d6486fd881772f1a885e8b13f006b855d59874416f42c41de1055eda successfully redeemed 66 CLT4Reputation locks.
+Redeems Counter: 1
+GAS 6785299
+Transaction 0x691c4206d46523ea1ffa2308686917a5ffca4d5a3df454497663dd2545c274f0 successfully redeemed 68 CLT4Reputation locks.
+Redeems Counter: 1
+GAS 7023728
+Transaction 0xf23d201741c38c8a7ec747e9c150b258f03c92dadfd8e15ae11db618f40caee8 successfully redeemed 69 CLT4Reputation locks.
+Redeems Counter: 1
+GAS 7398516
+Transaction 0x1c882ee6d1fc08b9ad8869b151dea7bdc4dbce271b31b906ca5f2afdc85d0928 successfully redeemed 72 CLT4Reputation locks.
+Redeems Counter: 1
+GAS 8988808
+Transaction 0x654449913414ff6253e18105e9bc632e55ebb187ee92f10845cdf0845e97b676 successfully redeemed 90 CLT4Reputation locks.
+Redeems Counter: 1
+GAS 7715154
+Transaction 0xa921a560066e43cbfe2270665edb18d96f3ad14e6f13a3cff4a6619687a63447 successfully redeemed 76 CLT4Reputation locks.
+Redeems Counter: 1
+GAS 7319196
+Transaction 0x14d5f28161d9362013e02b975222631e718737f76af87e1bfffb4e0194fc76fb successfully redeemed 71 CLT4Reputation locks.
+Redeems Counter: 1
+GAS 7008031
+Transaction 0x3378ebbdba4a9a13e2a3ee287ded929eacd82919725e635c1a7ff4b526346cc6 successfully redeemed 67 CLT4Reputation locks.
+Redeems Counter: 1
+GAS 6607223
+Transaction 0xd233c713e4ecb54c8be825a91a1b4df8b7eb009c13fab262c2de962e5614064c successfully redeemed 62 CLT4Reputation locks.
+Redeems Counter: 1

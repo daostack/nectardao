@@ -1,0 +1,435 @@
+
+Contineous Locking Redeemed
+Contineous Locking Redeemed counter 0
+lockingId 9
+beneficiary undefined
+amount 2.787201110395714321
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 1
+lockingId 10
+beneficiary undefined
+amount 0.006619546308917025
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 2
+lockingId 12
+beneficiary undefined
+amount 8.307530617690866828
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 3
+lockingId 16
+beneficiary undefined
+amount 16.354204488895620006
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 4
+lockingId 19
+beneficiary undefined
+amount 0.594213689086696806
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 5
+lockingId 21
+beneficiary undefined
+amount 1.323247307152513369
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 6
+lockingId 28
+beneficiary undefined
+amount 0.006619546308917025
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 7
+lockingId 30
+beneficiary undefined
+amount 658.644857737244023474
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 8
+lockingId 33
+beneficiary undefined
+amount 2.250645745031788622
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 9
+lockingId 40
+beneficiary undefined
+amount 17.059895953653979367
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 10
+lockingId 41
+beneficiary undefined
+amount 4564.728808857365405571
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 11
+lockingId 51
+beneficiary undefined
+amount 5112.275614376618686728
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 12
+lockingId 59
+beneficiary undefined
+amount 3309.77147322614114203
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 13
+lockingId 62
+beneficiary undefined
+amount 99.848411985555943158
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 14
+lockingId 65
+beneficiary undefined
+amount 2647.818523566810144621
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 15
+lockingId 67
+beneficiary undefined
+amount 1.622516995778652086
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 16
+lockingId 68
+beneficiary undefined
+amount 0.132390926178340507
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 17
+lockingId 69
+beneficiary undefined
+amount 387.363206664374292639
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 18
+lockingId 72
+beneficiary undefined
+amount 1.820375234952181974
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 19
+lockingId 73
+beneficiary undefined
+amount 1.278567355431216123
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 20
+lockingId 74
+beneficiary undefined
+amount 10.725882568459068289
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 21
+lockingId 76
+beneficiary undefined
+amount 0.110325771815283756
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 22
+lockingId 77
+beneficiary undefined
+amount 0.088260617452227004
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 23
+lockingId 83
+beneficiary undefined
+amount 0.022065154363056751
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 24
+lockingId 84
+beneficiary undefined
+amount 0.044130308726113502
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 25
+lockingId 85
+beneficiary undefined
+amount 0.066195463089170253
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 26
+lockingId 87
+beneficiary undefined
+amount 0.110325771815283756
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 27
+lockingId 88
+beneficiary undefined
+amount 0.330977315445851268
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 28
+lockingId 89
+beneficiary undefined
+amount 1765.212349044540096414
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 29
+lockingId 91
+beneficiary undefined
+amount 661.954630891702536155
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 30
+lockingId 92
+beneficiary undefined
+amount 1323.90926178340507231
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 31
+lockingId 93
+beneficiary undefined
+amount 28.407241489682064963
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 32
+lockingId 98
+beneficiary undefined
+amount 230.825410421656443701
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 33
+lockingId 101
+beneficiary undefined
+amount 108.530534307439686455
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 34
+lockingId 103
+beneficiary undefined
+amount 77.228040270698629218
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 35
+lockingId 104
+beneficiary undefined
+amount 1329.094573058723408844
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 36
+lockingId 105
+beneficiary undefined
+amount 119.703462419582875288
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 37
+lockingId 106
+beneficiary undefined
+amount 1458.065400310790119638
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 38
+lockingId 107
+beneficiary undefined
+amount 1875.798125606260931668
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 39
+lockingId 108
+beneficiary undefined
+amount 3987.283719176170226532
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 40
+lockingId 109
+beneficiary undefined
+amount 1093.342180406108616587
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 41
+lockingId 110
+beneficiary undefined
+amount 492.423857541008535863
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 42
+lockingId 111
+beneficiary undefined
+amount 2.94172637968272607
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 43
+lockingId 113
+beneficiary undefined
+amount 0.525224812759410549
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 44
+lockingId 116
+beneficiary undefined
+amount 4.211599352005236809
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 45
+lockingId 119
+beneficiary undefined
+amount 3.536602941310736083
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 46
+lockingId 120
+beneficiary undefined
+amount 3.30977315445851268
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 47
+lockingId 121
+beneficiary undefined
+amount 0.000992931946337553
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 48
+lockingId 122
+beneficiary undefined
+amount 0.239296599067350466
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 49
+lockingId 123
+beneficiary undefined
+amount 0.198587084319873197
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 50
+lockingId 126
+beneficiary undefined
+amount 0.220651543630567512
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 51
+lockingId 127
+beneficiary undefined
+amount 9929.319463375538042331
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 52
+lockingId 128
+beneficiary undefined
+amount 2206.515436305675120518
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 53
+lockingId 129
+beneficiary undefined
+amount 88.26061745222700482
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 54
+lockingId 135
+beneficiary undefined
+amount 9.110416419090406631
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 55
+lockingId 137
+beneficiary undefined
+amount 0.220651543630567512
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 56
+lockingId 138
+beneficiary undefined
+amount 0.825788402037398913
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 57
+lockingId 139
+beneficiary undefined
+amount 3.210403434016850267
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 58
+lockingId 141
+beneficiary undefined
+amount 0.055162885907641878
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 59
+lockingId 142
+beneficiary undefined
+amount 7.569213974665513368
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 60
+lockingId 143
+beneficiary undefined
+amount 576.577377485867972298
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 61
+lockingId 144
+beneficiary undefined
+amount 12.258406832167993415
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 62
+lockingId 145
+beneficiary undefined
+amount 73.550440993007960494
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 63
+lockingId 146
+beneficiary undefined
+amount 0.012025509127865929
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 64
+lockingId 147
+beneficiary undefined
+amount 410.061090794995497772
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 65
+lockingId 148
+beneficiary undefined
+amount 0.003309773154458512
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 66
+lockingId 149
+beneficiary undefined
+amount 255.381535922446473176
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 67
+lockingId 150
+beneficiary undefined
+amount 0.002206515436305675
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 68
+lockingId 151
+beneficiary undefined
+amount 127.298965951585954895
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 69
+lockingId 152
+beneficiary undefined
+amount 19.858638926751076084
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 70
+lockingId 153
+beneficiary undefined
+amount 39.717277853502152169
+batchIndex 6
+---------------------------------------
+Contineous Locking Redeemed counter 71
+lockingId 154
+beneficiary undefined
+amount 0.220239918175924688
+batchIndex 6
+---------------------------------------
+GEN Auction redeem
